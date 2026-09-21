@@ -1,0 +1,13 @@
+﻿Region_ID;Region_Name;Country;Region_Zone
+CZ01;Praha;Czechia;Domestic Core
+CZ02;Jihomoravský;Czechia;Domestic Core
+CZ03;Moravskoslezský;Czechia;Domestic Core
+CZ04;Jihočeský;Czechia;Domestic Extended
+CZ05;Ústecký;Czechia;Domestic Extended
+SK01;Bratislavský;Slovakia;Cross-border Near
+SK02;Západní  Slovensko;Slovakia;Cross-border Near
+SK03;Střední Slovensko;Slovakia;Cross-border Extended
+SK04;Východní Slovensko;Slovakia;Cross-border Extended
+PL01;Silesian;Poland;Cross-border Near
+PL02;Lesser Poland;Poland;Cross-border Extended
+AT01;Vienna Region;Austria;Cross-border Extended

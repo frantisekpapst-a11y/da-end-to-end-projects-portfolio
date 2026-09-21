@@ -1,0 +1,7 @@
+﻿Source;Files;Granularity;Role
+shipments_YYYY_MM.csv;24 souborů;1 řádek = 1 zásilka;Měsíční provozní exporty
+complaints.csv;1 soubor;1 řádek = 1 stížnost;Zákaznické stížnosti navázané na Shipment_ID
+carriers.csv;1 soubor;1 řádek = 1 dopravce;Referenční data
+warehouses.csv;1 soubor;1 řádek = 1 sklad;Referenční data + Dispatch SLA
+regions.csv;1 soubor;1 řádek = 1 region;Referenční geografická data
+service_levels.csv;1 soubor;1 řádek = 1 služba;Referenční data + SLA

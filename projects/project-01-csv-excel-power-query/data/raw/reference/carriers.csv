@@ -1,0 +1,7 @@
+﻿Carrier_ID;Carrier_Name;Carrier_Type;Active_Flag
+CAR01;SpeedLine Logistics;Parcel;TRUE
+CAR02;Central Express;Express & Parcel;TRUE
+CAR03;EuroShip ;Parcel;TRUE
+CAR04;NorthStar Transport;Parcel & Freight;TRUE
+CAR05;QuickRoute;Express & Parcel;TRUE
+CAR06;TransContinental;Parcel & Freight;TRUE

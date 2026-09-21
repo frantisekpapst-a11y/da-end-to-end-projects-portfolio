@@ -1,0 +1,5 @@
+﻿Service_ID;Service_Name;Service_Category;SLA_Days
+S01;Express;Premium;1
+S02;Priority;Premium;2
+S03;Standard;Standard;3
+S04;Economy;Economy;5

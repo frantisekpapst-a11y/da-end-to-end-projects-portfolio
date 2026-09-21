@@ -1,0 +1,6 @@
+﻿Warehouse_ID;Warehouse_Name;Region_ID;Warehouse_Type;Dispatch_SLA_Hours;Active_Flag
+WH01;Prague Central DC;CZ01;Central DC;24;TRUE
+WH02;Brno Distribution Center;CZ02;Regional DC;18;TRUE
+WH03;Ostrava Distribution Center;CZ03;Regional DC;18;TRUE
+WH04;Bratislava Distribution Center;SK01;Regional DC;24;Yes
+WH05;Katowice Distribution Center;PL01;Regional DC;24;TRUE
