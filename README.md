@@ -1,13 +1,3 @@
-Prijekt 1 — Excel
-Hlavní důraz:
-business analýza;
-Excel;
-Power Query;
-vizualizace;
-analytická interpretace;
-management reporting;
-rychlé ad-hoc řešení bez zbytečné infrastruktury.
-
 Projekt 2 — SQL a Power BI
 Hlavní důraz:
 SQL;
@@ -54,18 +44,6 @@ zda README odpovídá skutečné realizaci.
 
 Ano — po projití návrhu, přiloženého analytického workflow i s ohledem na to, co dnes vidím v českých inzerátech, mi základní koncepce dává smysl. Udělal bych ale jednu podstatnou úpravu: nešel bych do čtyř stejně velkých projektů. Udělal bych tři hlavní end-to-end projekty a čtvrtý, investiční, jako kratší bonusový case.
 
-Současné nabídky navíc dobře potvrzují směr, který sis zvolil. Například aktuální juniorní BI/Data Analyst role u PwC vyžaduje SQL, analytické a business myšlení a jako výhodu uvádí data modelling, data quality, ETL, Power BI a Python; jiná současná Data Analyst role zdůrazňuje SQL, komplexní datasety, data quality, definici KPI a převod business otázek do analytických požadavků.
-
-Co bych na tvém návrhu zachoval
-
-Sekvence Excel → SQL + Power BI → Python + SQL + API + Power BI je podle mě velmi dobrá. Nejen studijně, ale i portfolio logikou. Excel tě znovu dostane do analytického režimu, SQL/Power BI potom ukáže nejrelevantnější juniorní BI stack a třetí projekt ukáže, že rozumíš celému toku dat a umíš pracovat i technicky.
-
-Zároveň bych důsledně držel princip z tvého workflow: business problém → rozhodnutí → analytické otázky → KPI → data → analýza → interpretace → doporučení. Technologie mají následovat až potom. Přesně u projektu 3 bude největší nebezpečí, že se z něj stane „technology bingo“: API, Python, SQL, scheduler, logging, Power Query, DAX, Power BI jen proto, aby tam všechno bylo.
-
-Senior analytik se tě totiž velmi pravděpodobně nezeptá jen „umíš Python?“. Spíš: Proč jsi tohle dělal v Pythonu a ne v SQL? Proč je tato metrika v DAX a ne ve view? Proč jsi potřeboval Power Query? Jak jsi zkontroloval, že JOIN neznásobil řádky? Jaká je granularita fact tabulky? Co se stane při chybě API?
-
-A právě na to by měly tyto projekty připravovat.
-
 Moje doporučená finální sestava
 Projekt	Téma	Hlavní stack	Rozumný objem	Co má dokazovat
 1. Logistics Performance Analysis	logistika a kvalita doručování	Excel + Power Query	150–300 tis. zásilek	analytické myšlení, pokročilý Excel, PQ, management reporting
@@ -73,26 +51,9 @@ Projekt	Téma	Hlavní stack	Rozumný objem	Co má dokazovat
 3. Energy & Cost Monitoring	energetika / provoz poboček	Python + API + SQL + Power BI	2–5 mil. měření	kompletní pipeline, více zdrojů, automatizace, validace, architektonická rozhodnutí
 4. Investment Fund Performance	finanční trhy	API + Excel nebo Python	několik tisíc denních hodnot	práce s reálným API a časovou řadou, finanční analytika
 
-A důležitá poznámka k velikosti datasetů: nedělal bych uměle miliony řádků v každém projektu. Seniora nezaujme počet řádků sám o sobě. Mnohem lepší je říct: „Excelový projekt má 250 000 řádků, proto jsem raw data nezpracovával ručně ve worksheetu, ale použil Power Query a agregované výstupy.“ To ukazuje úsudek.
-
-Projekt 1 — Excel + Power Query
-Logistics Performance & Service Level Analysis
-
-Tady bych se s tebou shodl skoro úplně. Začít Excelem je dobrý tah. Jednak jej potřebuješ oprášit, jednak není Excel v reálné analytice žádná „začátečnická technologie“. I současné analytické role kombinují SQL, Excel a BI a očekávají schopnost rychle připravit business výstup.
-
-Místo prodejů bych dal logistiku.
-
-Fiktivní firma má několik skladů, několik dopravců, různé typy služeb a stovky tisíc zásilek za dva roky. Management vidí rostoucí počet pozdních doručení a logistické náklady, ale neví proč.
-
-Business decision by nebylo „udělej dashboard“, ale například: Má firma změnit rozdělení zásilek mezi dopravce, upravit SLA nebo řešit konkrétní sklady/trasy?
-
-Hlavní otázky bych postavil kolem podílu zásilek doručených včas, průměrné a mediánové doby doručení, SLA breach rate, nákladů na zásilku, výkonu dopravců a skladů, sezónnosti, rozdílů podle typu dopravy a regionu a identifikace kombinací sklad–dopravce–region, kde vzniká největší problém.
-
-Excelový projekt by přitom nebyl jen PivotTable. Power Query by načítal například 24 měsíčních CSV, dělal append, merge s tabulkou dopravců a skladů, kontroloval datové typy a nekonzistence. V Excelu by potom přišly kontingenční tabulky, slicery, pokročilejší vzorce, XLOOKUP/SUMIFS/COUNTIFS, případně LET, dynamické přehledy a management dashboard.
 
 A přidal bych malý ad-hoc analysis sheet. Například management se zeptá: „Co by se stalo, kdybychom nejhorších 15 % zásilek dopravce A přesunuli k dopravci B?“ Tím ukážeš něco, co Power BI portfolio často neukazuje: schopnost rychle reagovat na jednorázový business požadavek.
 
-To by byl velmi dobrý „Excel comeback“.
 
 Projekt 2 — SQL Server + Power BI
 Customer Retention & Subscription Analytics
