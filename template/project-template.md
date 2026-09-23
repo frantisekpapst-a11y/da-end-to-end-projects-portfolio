@@ -1241,7 +1241,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 14. Delivery a distribuce
+# 14. Předání a distribuce
 
 ## Forma výstupu
 
