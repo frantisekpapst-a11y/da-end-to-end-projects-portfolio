@@ -4,29 +4,31 @@ Vzorová šablona pro end-to-end analytický projekt.
 
 ---
 
-# 1. Business Understanding
+# Přehled projektu
 
-## Business Context
+# 1. Analýza obchodních potřeb
+
+## Business kontext
 
 Stručně popsat oblast nebo proces, kterého se projekt týká, proč projekt vzniká a proč je téma pro firmu důležité.
 
-## Business Problem
+## Business problém
 
 Popsat konkrétní problém, který firma řeší.
 
-## Business Goal
+## Business cíl
 
 Popsat, čeho má projekt dosáhnout.
 
-## Target Users
+## Cíloví uživatelé
 
 Určit primárního uživatele a případně sekundární uživatele výstupu.
 
-## Business Decision
+## Business rozhodnutí
 
 Popsat rozhodnutí, které má analýza podpořit.
 
-## Analytical Questions
+## Analytické otázky
 
 Definovat hlavní otázky, na které mají odpovědět data.
 
@@ -34,7 +36,7 @@ Definovat hlavní otázky, na které mají odpovědět data.
 
 Definovat KPI relevantní pro business problém a stručně uvést jejich business význam.
 
-## Scope
+## Rozsah
 
 Určit:
 - co je in scope;
@@ -45,15 +47,15 @@ Určit:
 - datové zdroje;
 - očekávané výstupy.
 
-## Assumptions
+## Předpoklady
 
 Uvést předpoklady, se kterými projekt pracuje jako s platnými.
 
-## Limitations
+## Omezení
 
 Uvést známá omezení dat, rozsahu nebo interpretace.
 
-## Success Criteria
+## Kritéria úspěchu
 
 Definovat kritéria, podle kterých bude možné posoudit, zda projekt splnil svůj účel.
 
@@ -73,7 +75,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 2. Data Source Assessment
+# 2. Hodnocení datových zdrojů
 
 ## Dostupné zdroje
 
@@ -135,7 +137,7 @@ Určit, zda data obsahují:
 
 Popsat případná omezení pro sdílení, publikaci a GitHub.
 
-## Ownership a licence
+## Vlastnicví a licence
 
 Uvést:
 - Data Ownera;
@@ -159,7 +161,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 3. Architecture Decision
+# 3. Architektonické rozhodnutí
 
 ## Výběr nástrojů
 
@@ -288,9 +290,9 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 4. Data Acquisition a Raw Layer
+# 4. Získání dat a raw layer
 
-## Data Acquisition
+## Získání dat
 
 Popsat, jak budou data načítána z jednotlivých zdrojů.
 
@@ -302,7 +304,7 @@ Uvést podle potřeby:
 - Excel;
 - jiné zdroje.
 
-## Raw Layer
+## Raw vrstva
 
 Popsat, kde a jak budou uchována původní data před čištěním a transformacemi.
 
@@ -333,7 +335,7 @@ Dohledatelné mají být zejména:
 - použitý kód nebo skript;
 - čas načtení.
 
-## Data Provenance
+## Původ dat
 
 Uvést:
 - odkud data pocházejí;
@@ -342,7 +344,7 @@ Uvést:
 - jakým způsobem;
 - jaké období nebo rozsah pokrývají.
 
-## Run Metadata a Logging
+## Run Metadata a logging
 
 Uvést, jak budou evidovány:
 - start a konec běhu;
@@ -364,9 +366,9 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 5. Data Quality, Cleaning a Validation
+# 5. Kvalita, čištění a validace dat
 
-## Missing Values
+## Chybějící hodnoty
 
 Popsat:
 - které hodnoty mohou chybět;
@@ -417,13 +419,13 @@ Prověřit:
 - valid_from / valid_to;
 - správnost sledovaného období.
 
-## Business Rules
+## Business pravidla
 
 Popsat business pravidla, která musí data splňovat.
 
 Nejasná pravidla potvrdit s business ownerem nebo domain expertem.
 
-## Reconciliation
+## Odsouhlasení dat
 
 Popsat, jak bude ověřeno, že se data během transformací neztratila nebo nezdvojila.
 
@@ -472,7 +474,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 6. Transformation a Business Logic
+# 6. Transformace a obchodní logika
 
 ## Filtrování
 
@@ -522,7 +524,7 @@ Volbu stručně zdůvodnit podle:
 - udržovatelnosti;
 - návaznosti na další kroky.
 
-## Facts a Dimensions
+## Faktová a dimenzní data
 
 Popsat:
 - navržené fact tables;
@@ -531,7 +533,7 @@ Popsat:
 - navržené dimension tables;
 - klíče a vazby.
 
-## Gold / Analytical Tables
+## Zlatá / analytická vrstvas
 
 Uvést, které tabulky budou připraveny pro analytiku a reporting a jaký mají účel.
 
@@ -569,7 +571,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 7. Exploratory Data Analysis
+# 7. Explorační analýza dat - EDA
 
 ## Distribuce
 
@@ -632,7 +634,7 @@ Formulovat relevantní hypotézy a popsat, jak byly v datech ověřeny.
 
 Formální statistické testování použít pouze tehdy, pokud je pro projekt potřeba.
 
-## Business Findings
+## Business zjištění
 
 U každého hlavního zjištění popsat:
 - co bylo zjištěno;
@@ -655,7 +657,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 8. Statistical Data Analysis
+# 8. Statistická analýza dat - SDA
 
 Tuto část použít pouze tehdy, pokud statistická analýza odpovídá business otázce.
 
@@ -735,7 +737,7 @@ Před pokračováním musí být jasné:
 
 Popsat, co představuje jeden řádek každé fact table.
 
-## Fact a Dimension Tables
+## Faktové a referenční tabulky
 
 Uvést:
 - fact tables;
@@ -787,9 +789,9 @@ Dimension
 → Fact
 ```
 
-## Measures
+## Míry
 
-Uvést hlavní measures a jejich business význam.
+Uvést hlavní míry a jejich business význam.
 
 ## Calculated Columns
 
@@ -837,9 +839,9 @@ Před pokračováním musí být jasné:
 
 # 10. KPI a DAX
 
-## Základní measures
+## Základní míry
 
-Definovat hlavní absolutní measures.
+Definovat hlavní absolutní míry.
 
 Uvést:
 - název;
@@ -862,7 +864,7 @@ Definovat potřebná porovnání:
 
 Ověřit, že porovnávaná období jsou srovnatelná.
 
-## Plan vs Actual
+## Plán vs skutečnost
 
 Definovat:
 ```text
@@ -900,7 +902,7 @@ Použít `FILTER()` pro složitější řádkovou logiku.
 
 Pro jednoduché podmínky preferovat přímý filtr v `CALCULATE()`.
 
-## Measure vs KPI
+## Míry vs KPI
 
 Rozlišit:
 ```text
@@ -939,7 +941,7 @@ Před pokračováním musí být jasné:
 
 # 11. Dashboard
 
-## Cílová skupina
+## Cíloví uživatelé
 
 Definovat hlavní uživatele dashboardu a jejich potřebu detailu.
 
@@ -1136,7 +1138,7 @@ Před pokračováním musí být jasné:
 
 ---
 
-# 13. Automation a Monitoring
+# 13. Automatizace a monitoring
 
 Automatizaci použít pouze tehdy, když se proces opakuje a přináší reálný provozní přínos.
 
@@ -1144,11 +1146,11 @@ Automatizaci použít pouze tehdy, když se proces opakuje a přináší reáln�
 
 Popsat, které manuální kroky budou převedeny do skriptu.
 
-## Scheduler
+## Plánovač
 
 Uvést:
 - trigger nebo frekvenci;
-- co scheduler spouští.
+- co plánovač spouští.
 
 ## Pipeline
 
@@ -1206,7 +1208,7 @@ FAILED
 → no publish
 ```
 
-## Power BI Refresh
+## Power BI aktualizace
 
 Refresh spouštět až po validním dokončení pipeline.
 
@@ -1351,7 +1353,7 @@ Před uzavřením projektu musí být jasné:
 
 README musí umožnit rychle pochopit účel, fungování a použití projektu.
 
-### Project Overview
+### Přehled projektu
 
 Stručně uvést:
 * co projekt řeší;
@@ -1359,7 +1361,7 @@ Stručně uvést:
 * cílového uživatele;
 * hlavní výstup.
 
-### Business Problem
+### Business problém
 
 Popsat:
 * proč projekt vznikl;
@@ -1367,7 +1369,7 @@ Popsat:
 * původní zadání;
 * rozhodnutí, které má projekt podpořit.
 
-### Target Users
+### Cíloví uživatelé
 
 Uvést hlavní skupiny uživatelů.
 
@@ -1377,11 +1379,11 @@ Podle potřeby rozlišit:
 * operational users;
 * další stakeholdery.
 
-### Data Sources
+### Zdroje dat
 
 Uvést hlavní datové zdroje, jejich typ a obsah.
 
-### Architecture
+### Architektura
 
 Popsat hlavní workflow / pipeline od zdroje dat po finální výstup.
 
@@ -1389,11 +1391,11 @@ Popsat hlavní workflow / pipeline od zdroje dat po finální výstup.
 
 Stručně popsat úlohu jednotlivých technologií v projektu.
 
-### Data Quality
+### Kvalita dat
 
 Uvést hlavní problémy v kvalitě dat a způsob jejich řešení.
 
-### Transformation Process
+### Transformační proces
 
 Popsat:
 * ETL / ELT přístup;
@@ -1404,7 +1406,7 @@ Popsat:
 
 Uvést hlavní KPI a jejich business význam.
 
-### Analysis
+### Analýza
 
 Shrnout:
 * hlavní typy analýz;
@@ -1420,15 +1422,15 @@ Popsat:
 
 Doplnit 1–2 reprezentativní screenshoty.
 
-### Findings
+### Zjištění
 
 Uvést stručné summary hlavních zjištění.
 
-### Recommendations
+### Doporučení
 
 Uvést doporučení navazující na hlavní findings.
 
-### Automation
+### Automatizace
 
 Stručně popsat:
 * co je automatizované;
@@ -1437,11 +1439,11 @@ Stručně popsat:
 * hlavní kroky;
 * chování při chybě.
 
-### Limitations
+### Omezení
 
 Uvést hlavní omezení, která mohou ovlivnit interpretaci nebo použití výsledků.
 
-### How to Run
+### Jak spustit
 
 Popsat praktický postup spuštění projektu včetně správného pořadí kroků.
 
@@ -1457,7 +1459,7 @@ Například:
 8. refresh / open final output
 ```
 
-### Repository Structure
+### Struktura repozitáře
 
 Uvést hlavní složky a stručně popsat jejich účel.
 

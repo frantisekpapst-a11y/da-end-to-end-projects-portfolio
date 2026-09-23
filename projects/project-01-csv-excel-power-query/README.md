@@ -36,7 +36,7 @@ Cílem projektu je identifikovat hlavní zdroje nedodržování dodacích termí
 
 Sekundárním cílem je podpořit zákaznickou zkušenost snížením počtu pozdních a problematických zásilek.
 
-## Cílová skupina
+## Cíloví uživatelé
 
 Primárním uživatelem je **manažer logistiky**. Sekundárními uživateli jsou provozní a skladoví manažeři a management společnosti.
 
@@ -211,7 +211,7 @@ Projekt simuluje situaci bez přímého přístupu do provozní databáze. Analy
 
 Dataset neobsahuje skutečná osobní ani důvěrná data. Data jsou syntetická a mohou být publikována v portfolio repozitáři.
 
-## Ownership a licence
+## Vlastnicví a licence
 
 Pro simulovaný scénář je Data Ownerem logistické oddělení a technickým vlastníkem zdrojového systému interní IT/provozní tým. Syntetická data nemají smluvní omezení třetích stran.
 
@@ -274,7 +274,7 @@ Každý použitý nástroj má jasnou roli, raw data zůstávají oddělena od t
 
 ---
 
-# 4. Získávání dat a raw layer
+# 4. Získání dat a raw layer
 
 ## Získání dat
 
