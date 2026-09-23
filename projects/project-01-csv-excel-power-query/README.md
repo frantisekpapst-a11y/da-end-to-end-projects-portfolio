@@ -1,14 +1,24 @@
 # Project 01 - Logistics Performance & Service Level Analysis (CSV, Power Query & Excel)
 
-## Přehled projektu
+# Přehled projektu
 
-Projekt analyzuje výkonnost logistického procesu smyšlené distribuční společnosti, která řeší pozdní doručení a rostoucí přepravní náklady. Cílem je určit hlavní problémové oblasti, odlišit problémy vznikající ve skladech od problémů během přepravy a připravit podklady pro rozhodování managementu.
+Projekt analyzuje výkonnost logistického procesu smyšlené distribuční společnosti, která řeší pozdní doručení a rozdíly v přepravních nákladech. Cílem je identifikovat hlavní zdroje nedodržování dodacích termínů, porovnat výkonnost dopravců a skladů a určit oblasti, na které má smysl zaměřit další provozní opatření.
 
-Projekt využívá **Excel, Power Query a Excel Data Model**. Dosavadní workflow pokrývá business zadání, přípravu a validaci dat, transformace, EDA, statistickou analýzu a KPI souhrn.
+Analýza vychází z **24 měsíčních CSV exportů za období 2025–2026** a zahrnuje **250 000 unikátních zásilek**, referenční data a zákaznické stížnosti.
+
+- **Nástroje:** Excel, Power Query a Excel Data Model.
+- **Zpracování dat:** spojení měsíčních exportů, kontrola kvality, čištění, validace, transformace a příprava analytické tabulky.
+- **Analýza:** průzkumná analýza dat, statistické ověření vybraných vztahů, KPI a porovnání výkonnosti dopravců a skladů.
+- **Hlavní výstup:** datově podložená hlavní zjištění a doporučení pro řízení logistického procesu, doplněná interaktivním Excel dashboardem pro jejich průběžné sledování.
+- **Business přínos:** podpora rozhodování o výkonnosti dopravců a skladů, plnění SLA, přepravních nákladech a prioritách pro další provozní prověření.
+
+![Hlavní zjištění a doporučení](output/screenshots/08_findings_recommendations.png)
+
+![Dashboard logistické výkonnosti](output/screenshots/01_dashboard_overview.png)
 
 ---
 
-# 1. Business Understanding
+# 1. Analýza obchodních potřeb
 
 ## Business kontext
 
@@ -141,7 +151,7 @@ Projekt splňuje svůj analytický účel, pokud umožňuje:
 
 ---
 
-# 2. Data Source Assessment
+# 2. Hodnocení datových zdrojů
 
 ## Dostupné zdroje
 
@@ -207,7 +217,7 @@ Pro simulovaný scénář je Data Ownerem logistické oddělení a technickým v
 
 ---
 
-# 3. Architecture Decision
+# 3. Architektonické rozhodnutí
 
 ## Výběr nástrojů
 
@@ -264,7 +274,7 @@ Každý použitý nástroj má jasnou roli, raw data zůstávají oddělena od t
 
 ---
 
-# 4. Data Acquisition & Raw Layer
+# 4. Získávání dat a raw layer
 
 ## Získání dat
 
@@ -304,7 +314,7 @@ Ve zpracovaných zásilkách zůstává atribut `Zdroj.Název`, který umožňuj
 
 ---
 
-# 5. Data Quality, Cleaning & Validation
+# 5. Kvalita, čištění a validace dat
 
 ## Chybějící hodnoty
 
@@ -376,9 +386,11 @@ Clean řádky:               250 000
 
 Referenční joiny byly provedeny jako left outer, aby během validace nedocházelo k automatickému vyřazení zásilek.
 
+![Kontrola kvality a validace dat v Power Query](output/screenshots/03_data_quality_validation.png)
+
 ---
 
-# 6. Transformation & Business Logic
+# 6. Transformace a obchodní logika
 
 ## Filtrování
 
@@ -454,7 +466,7 @@ Pomocné dotazy:
 
 ---
 
-# 7. Exploratory Data Analysis
+# 7. Explorační analýza dat - EDA
 
 ## Trendy
 
@@ -473,6 +485,8 @@ Mezi dopravci se lišila včasnost, doba přepravy i náklady:
 Brno mělo nejkratší průměrnou dobu zpracování **10,69 h**, Katowice nejdelší **14,55 h**. Absolutní dobu zpracování však nebylo vhodné porovnávat bez SLA limitu.
 
 Po rozdělení na sklady s 18h a 24h SLA vyšla Ostrava jako slabší sklad v rámci 18h skupiny: využívala přibližně **68,70 %** dostupného SLA času a její SLA Rate byla **79,99 %**, zatímco Brno využívalo **59,37 %** a dosahovalo **86,77 %**.
+
+![Porovnání plnění expedičního SLA podle skladu](output/screenshots/07_warehouse_sla_performance.png)
 
 ## Stížnosti a provozní výjimky
 
@@ -501,7 +515,7 @@ Tyto vztahy byly následně ověřeny v části Statistical Data Analysis.
 
 ---
 
-# 8. Statistical Data Analysis
+# 8. Statistická analýza dat - SDA
 
 Statistická analýza byla použita pro ověření vztahů identifikovaných během EDA. Hlavní metodou byla Pearsonova korelace doplněná bodovým grafem a lineární trendovou přímkou.
 
@@ -531,6 +545,8 @@ Analýza ukázala zejména:
 - dopravci s vyšším podílem opožděných zásilek měli tendenci vykazovat i mírně delší zpoždění.
 
 Výsledky popisují statistickou souvislost, nikoliv příčinu. Do vztahů mohou vstupovat další faktory, například sezónnost, skladové SLA nebo rozdílné charakteristiky přepravních služeb.
+
+![Statistická analýza vztahu objemu zásilek a včasnosti doručení](output/screenshots/05_sda_volume_vs_on_time.png)
 
 ---
 
@@ -683,3 +699,135 @@ Dashboard podporuje zejména rozhodování o:
 
 ---
 
+# 12. Interpretace a doporučení
+
+
+
+
+---
+
+# 13. Automatizace a monitoring
+
+## Rozsah automatizace
+
+Opakovatelná část zpracování je automatizována pomocí Power Query. Po přidání nového měsíčního CSV souboru do zdrojové složky lze celý proces znovu spustit pomocí **Aktualizovat vše** v Excelu.
+
+## Proces aktualizace
+
+```text
+nový měsíční CSV soubor
+→ Power Query From Folder
+→ cleaning a validace
+→ joiny a analytické výpočty
+→ fact_shipments_clean
+→ Excel Data Model
+→ kontingenční tabulky a dashboard
+```
+
+Transformační kroky jsou uložené v Power Query a při každém obnovení se provedou znovu nad aktuálními vstupními soubory.
+
+## Kontrola aktualizace
+
+Po obnovení se kontroluje zejména:
+- úspěšné dokončení Power Query refresh;
+- počet načtených řádků;
+- validační flagy;
+- dostupnost hlavních KPI a dashboardu.
+
+Při chybě vstupního souboru nebo transformačního kroku není výstup považován za validně aktualizovaný.
+
+---
+
+# 14. Předání a distribuce
+
+## Forma výstupu
+
+Hlavním výstupem projektu je Excel sešit:
+`output/logistics_performance_analysis.xlsx`.
+
+Obsahuje připravený analytický model, EDA, statistickou analýzu, KPI a interaktivní management dashboard.
+
+Součástí projektu jsou také README a reprezentativní screenshoty výsledků.
+
+## Sdílení výsledku
+
+Portfolio verze projektu je dostupná prostřednictvím GitHub repozitáře.
+
+Excel sešit představuje finální analytický výstup určený k otevření a dalšímu použití v MS Excel.
+
+## Cílový uživatel
+
+Primárním uživatelem je manažer logistiky.
+
+Sekundárními uživateli jsou:
+- provozní management;
+- skladoví manažeři;
+- další stakeholdery, kteří potřebují sledovat výkonnost logistického procesu.
+
+## Frekvence distribuce
+
+Projekt simuluje reporting založený na měsíčních exportech zásilek.
+
+Aktualizace výstupu může být provedena po přidání nového měsíčního souboru a následném obnovení Power Query.
+
+## Verze výstupu
+
+Projekt je verzován pomocí Git.
+
+Za významnější změnu se považuje zejména změna:
+- definice KPI;
+- business logiky;
+- transformačního postupu;
+- struktury dashboardu.
+
+Drobné vizuální nebo dokumentační změny lze evidovat jako běžné průběžné úpravy v historii repozitáře.
+
+---
+
+# 15. Dokumentace a GitHub
+
+## Jak projekt spustit
+
+Pro otevření a obnovení analýzy:
+1. zachovat projektovou strukturu složek;
+2. otevřít `output/logistics_performance_analysis.xlsx` v MS Excel;
+3. ověřit dostupnost zdrojových CSV souborů v `data/raw/`;
+4. v Excelu použít **Data → Aktualizovat vše**;
+5. po dokončení obnovy zkontrolovat KPI, analytické výstupy a dashboard.
+
+## Struktura repozitáře
+
+```text
+project-01-csv-excel-power-query/
+├── data/
+│   └── raw/
+│       ├── shipments/
+│       │   └── shipments_YYYY_MM.csv
+│       ├── reference/
+│       │   ├── carriers.csv
+│       │   ├── warehouses.csv
+│       │   ├── regions.csv
+│       │   └── service_levels.csv
+│       └── complaints.csv
+│
+├── output/
+│   ├── screenshots/
+│   └── logistics_performance_analysis.xlsx
+│
+├── dataset_manifest.csv
+└── README.md
+```
+
+- `data/raw/` – původní syntetická data bez ručních zásahů;
+- `data/raw/shipments/` – 24 měsíčních exportů zásilek;
+- `data/raw/reference/` – referenční tabulky;
+- `output/` – finální Excel analýza;
+- `output/screenshots/` – reprezentativní screenshoty použité v dokumentaci;
+- `dataset_manifest.csv` – přehled datových souborů projektu;
+- `README.md` – dokumentace projektu, business problému, zpracování, analýzy a výsledků.
+
+## Verzování
+
+Projekt je verzován pomocí Git a publikován v GitHub repozitáři.
+
+Historie repozitáře umožňuje dohledat změny v analytickém řešení, dokumentaci a finálních výstupech.
