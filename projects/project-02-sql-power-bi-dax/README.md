@@ -6,7 +6,7 @@
 
 # Přehled projektu
 
-Projekt je zaměřen na analýzu zákaznické retence a odchodů ve firmě se subscription modelem, například SaaS nebo telekomunikační společnosti.
+Projekt je zaměřen na analýzu zákaznické retence a odchodů ve společnosti se subscription modelem - společnost poskytuje internet TV.
 
 Business problém vychází ze situace, kdy firma zaznamenává zvýšený odchod zákazníků a potřebuje zjistit:
 - ve kterých segmentech se churn koncentruje;
