@@ -1,0 +1,13 @@
+# Full source datasets
+data/source/*.csv
+
+# SQL Server database files
+*.mdf
+*.ldf
+
+# Temporary files
+*.tmp
+~$*
+
+# Power BI temporary files
+*.lock
