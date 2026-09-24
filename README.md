@@ -49,7 +49,7 @@ da-end-to-end-projects-portfolio/
 
 Dokončený end-to-end projekt zaměřený na výkonnost logistického procesu smyšlené distribuční společnosti.
 
-Projekt analyzuje **250 000 unikátních zásilek za období 2025–2026**, referenční data a zákaznické stížnosti. Cílem je identifikovat hlavní zdroje nedodržování dodacích termínů, porovnat výkonnost dopravců a skladů a určit oblasti vhodné pro další provozní opatření.
+Projekt analyzuje **250 000 unikátních zásilek za období 2025 a 2026**, referenční data a zákaznické stížnosti. Cílem je identifikovat hlavní zdroje nedodržování dodacích termínů, porovnat výkonnost dopravců a skladů a určit oblasti vhodné pro další provozní opatření.
 
 Hlavní oblasti:
 - spojení 24 měsíčních CSV exportů;
