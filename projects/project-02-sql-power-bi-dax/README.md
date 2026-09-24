@@ -1,7 +1,7 @@
 # Project 02 – Customer Retention & Subscription Analytics
 ## SQL Server + Power BI + DAX
 
-> **Stav projektu:** zahájen.  
+> **Stav projektu:** zahájen/probíhá.  
 > Projekt navazuje na první portfolio projekt zaměřený na Excel a Power Query a rozšiřuje portfolio o SQL Server, relační datový model, DAX a Power BI.
 
 # Přehled projektu
