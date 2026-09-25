@@ -103,7 +103,7 @@ SET
 FROM analytics.FactZakaznikMesic f
 JOIN clean.Predplatna p
     ON f.zakaznik_id = p.zakaznik_id
-    AND p.datum_zacatku <= EOMONTH(f.mesic)
+WHERE p.datum_zacatku <= EOMONTH(f.mesic)
     AND (
         p.datum_konce IS NULL
         OR p.datum_konce >= f.mesic
@@ -115,37 +115,27 @@ JOIN clean.Predplatna p
    ============================================================ */
 
 UPDATE f
-SET
-    aktivni_na_zacatku =
-        CASE
-            WHEN EXISTS (
-                SELECT 1
-                FROM clean.Predplatna p
-                WHERE p.zakaznik_id = f.zakaznik_id
-                  AND p.datum_zacatku <= EOMONTH(DATEADD(MONTH, -1, f.mesic))
-                  AND (
-                      p.datum_konce IS NULL
-                      OR p.datum_konce >= EOMONTH(DATEADD(MONTH, -1, f.mesic))
-                  )
-            )
-            THEN 1 ELSE 0
-        END,
+SET aktivni_na_zacatku = 1
+FROM analytics.FactZakaznikMesic f
+JOIN clean.Predplatna p
+    ON f.zakaznik_id = p.zakaznik_id
+WHERE p.datum_zacatku <= EOMONTH(DATEADD(MONTH, -1, f.mesic))
+  AND (
+      p.datum_konce IS NULL
+      OR p.datum_konce >= EOMONTH(DATEADD(MONTH, -1, f.mesic))
+  );
 
-    aktivni_na_konci =
-        CASE
-            WHEN EXISTS (
-                SELECT 1
-                FROM clean.Predplatna p
-                WHERE p.zakaznik_id = f.zakaznik_id
-                  AND p.datum_zacatku <= EOMONTH(f.mesic)
-                  AND (
-                      p.datum_konce IS NULL
-                      OR p.datum_konce >= EOMONTH(f.mesic)
-                  )
-            )
-            THEN 1 ELSE 0
-        END
-FROM analytics.FactZakaznikMesic f;
+
+UPDATE f
+SET aktivni_na_konci = 1
+FROM analytics.FactZakaznikMesic f
+JOIN clean.Predplatna p
+    ON f.zakaznik_id = p.zakaznik_id
+WHERE p.datum_zacatku <= EOMONTH(f.mesic)
+  AND (
+      p.datum_konce IS NULL
+      OR p.datum_konce >= EOMONTH(f.mesic)
+  );
 
 
 /* ============================================================
@@ -207,25 +197,22 @@ WHERE p.poradi > 1
   AND p.datum_zacatku <= EOMONTH(f.mesic);
 
 
-  UPDATE f
+UPDATE f
 SET baze_reaktivace = 1
 FROM analytics.FactZakaznikMesic f
-WHERE EXISTS (
-    SELECT 1
-    FROM clean.Predplatna p
-    WHERE p.zakaznik_id = f.zakaznik_id
-      AND p.datum_konce < f.mesic
-)
-AND NOT EXISTS (
-    SELECT 1
-    FROM clean.Predplatna p
-    WHERE p.zakaznik_id = f.zakaznik_id
-      AND p.datum_zacatku <= f.mesic
-      AND (
-          p.datum_konce IS NULL
-          OR p.datum_konce >= f.mesic
-      )
-);
+
+JOIN clean.Predplatna p_predchozi
+    ON f.zakaznik_id = p_predchozi.zakaznik_id
+    AND p_predchozi.datum_konce < f.mesic
+
+LEFT JOIN clean.Predplatna p_aktivni
+    ON f.zakaznik_id = p_aktivni.zakaznik_id
+    AND p_aktivni.datum_zacatku <= f.mesic
+    AND (
+        p_aktivni.datum_konce IS NULL
+        OR p_aktivni.datum_konce >= f.mesic
+    )
+WHERE p_aktivni.predplatne_id IS NULL;
 
 
 /* ============================================================
