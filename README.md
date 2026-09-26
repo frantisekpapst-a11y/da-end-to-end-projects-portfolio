@@ -117,6 +117,8 @@ GitHub
 
 ![Dashboard - Analýza churnu](projects/project-02-sql-power-bi-dax/output/screenshots/02_dashboard_churn_analysis.png)
 
+Analytická zjištění a business doporučení jsou shrnuta v projektu a ve větším detailu zde: [Zjištění a doporučení](projects/project-02-sql-power-bi-dax/output/findings_and_recommendations.md).
+
 
 ➡️ [Otevřít Project 02](projects/project-02-sql-power-bi-dax/)
 
