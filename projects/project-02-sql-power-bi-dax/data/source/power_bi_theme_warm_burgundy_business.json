@@ -1,0 +1,16 @@
+{
+  "name": "Warm Burgundy Business",
+  "dataColors": [
+    "#5B2C3A",
+    "#B58A5A",
+    "#6F8A68",
+    "#C45B52",
+    "#8A8580",
+    "#7A5360",
+    "#C7A77E",
+    "#9AA693"
+  ],
+  "background": "#F6F3EF",
+  "foreground": "#292524",
+  "tableAccent": "#5B2C3A"
+}
