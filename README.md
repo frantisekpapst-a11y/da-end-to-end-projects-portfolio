@@ -28,6 +28,12 @@ da-end-to-end-projects-portfolio/
 │   │   └── README.md
 │   │
 │   ├── project-02-sql-power-bi-dax/
+│   │   ├── data/
+│   │   ├── docs/
+│   │   ├── output/
+│   │   ├── power-bi/
+│   │   ├── sql/
+│   │   ├── .gitignore
 │   │   └── README.md
 │   │
 │   └── project-03-api-python-sql-power-bi/
@@ -77,32 +83,39 @@ GitHub
 
 ---
 
-## 🟡 Project 02 — Customer Retention & Subscription Analytics
+## ✅ Project 02 — Customer Retention & Churn Analysis
 
-**SQL Server + Power BI**
+**SQL Server + Power BI + DAX**
 
-Projekt, který byl již započat a jeho řešení probíhá a který je zaměřený na zákaznickou retenci a odchody ve firmě se subscription modelem.
+Dokončený end-to-end projekt zaměřený na zákaznickou retenci, churn, reaktivace a tržby ve smyšlené společnosti s předplatitelským modelem.
 
-Business cílem je zjistit, ve kterých segmentech se churn koncentruje, jak souvisí s tarifem, délkou vztahu nebo kontakty na zákaznickou podporu a které skupiny zákazníků jsou finančně nejvýznamnější.
+Projekt analyzuje **40 000 zákazníků, 44 277 předplatných a období 09/2024–08/2026**. Cílem je zjistit, které zákaznické skupiny odcházejí častěji, kdy je riziko odchodu nejvyšší, jaké důvody zákazníci uvádějí a jak se vyvíjejí návraty zákazníků a tržby.
 
-Rozsah:
-- přibližně **50 000 zákazníků**;
-- přibližně **1,5 milionu řádků** napříč relačními tabulkami;
-- hlavní transformační a analytická vrstva v SQL;
-- hvězdicový model, DAX a management dashboard v Power BI.
+Hlavní oblasti:
+- načtení 6 CSV zdrojů do SQL Serveru;
+- datové vrstvy `raw → staging → clean → analytics`;
+- kontrola kvality, čištění, validace a reconciliation;
+- měsíční analytická fact tabulka na úrovni zákazník × měsíc;
+- churn, reaktivace, délka předplatného a tržby;
+- hvězdicový model v Power BI;
+- KPI a DAX measures;
+- SQL EDA a interaktivní ověření v Power BI;
+- dvoustránkový Power BI dashboard;
+- interpretace zjištění a návrh business doporučení.
 
 Hlavní technologie:
 ```text
 SQL Server / LocalDB
 SQL
 Power BI
-Power Query
 DAX
 Git
 GitHub
 ```
 
-Cílem projektu je ukázat práci s relačními daty, SQL čištěním a validací, business logikou, analytickými dotazy a následným reportingem v Power BI.
+![Dashboard - Přehled KPI](projects/project-02-sql-power-bi-dax/output/screenshots/01_dashboard_overview.png)
+
+![Dashboard - Analýza churnu](projects/project-02-sql-power-bi-dax/output/screenshots/02_dashboard_churn_analysis.png)
 
 ➡️ [Otevřít Project 02](projects/project-02-sql-power-bi-dax/)
 
