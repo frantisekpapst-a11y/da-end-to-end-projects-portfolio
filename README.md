@@ -128,7 +128,9 @@ Analytická zjištění a business doporučení jsou shrnuta v projektu a ve vě
 
 **API + Python + SQL Server + Power BI**
 
-Plánovaný projekt zaměřený na historickou výkonnost a rizikovost vybraných investičních fondů.
+Projekt zaměřený na historickou výkonnost a rizikovost vybraných investičních fondů.
+
+Projekt byl již zahájen a měl by být dokončen do 30.09.26.
 
 Projekt bude pracovat s reálnými veřejně dostupnými daty získanými přes API a zaměří se například na:
 - kumulativní a anualizovaný výnos;
