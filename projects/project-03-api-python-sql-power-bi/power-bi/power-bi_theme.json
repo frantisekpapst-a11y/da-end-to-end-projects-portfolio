@@ -1,0 +1,14 @@
+{
+  "name": "Investiční fondy - modrá a šedá",
+  "dataColors": [
+    "#1F4E79",
+    "#2F75B5",
+    "#5B9BD5",
+    "#7A869A",
+    "#3F4752",
+    "#0B1F33"
+  ],
+  "background": "#F5F7FA",
+  "foreground": "#111827",
+  "tableAccent": "#2F75B5"
+}

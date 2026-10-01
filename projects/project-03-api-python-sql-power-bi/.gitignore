@@ -1,0 +1,44 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Raw downloaded data
+data/raw/
+
+# Local databases
+*.mdf
+*.ldf
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary / generated files
+*.tmp
+*.temp
+*.bak
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Power BI temporary files
+*.pbit.lock
+~$*.pbix
