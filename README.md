@@ -37,7 +37,18 @@ da-end-to-end-projects-portfolio/
 │   │   └── README.md
 │   │
 │   └── project-03-api-python-sql-power-bi/
-│       └── README.md
+│       ├── data/
+│       ├── docs/
+│       ├── logs/
+│       ├── notebooks/
+│       ├── output/
+│       ├── power-bi/
+│       ├── python/
+│       ├── sql/
+│       ├── .gitignore
+│       ├── README.md
+│       ├── requirements.txt
+│       └── run_pipeline.bat
 │
 ├── workflow/
 │   └── analytical-workflow.md
@@ -119,44 +130,48 @@ GitHub
 
 Analytická zjištění a business doporučení jsou shrnuta v projektu a ve větším detailu zde: [Zjištění a doporučení](projects/project-02-sql-power-bi-dax/output/findings_and_recommendations.md).
 
-
 ➡️ [Otevřít Project 02](projects/project-02-sql-power-bi-dax/)
 
 ---
 
-## 🟡 Project 03 — Investment Fund Performance & Risk Analytics
+## ✅ Project 03 — Investment Fund Performance & Risk Analytics
 
 **API + Python + SQL Server + Power BI**
 
-Projekt zaměřený na historickou výkonnost a rizikovost vybraných investičních fondů.
+Dokončený end-to-end projekt zaměřený na historickou výkonnost a rizikové charakteristiky **6 vybraných investičních fondů ČSOB** – dvou akciových, dvou smíšených a dvou dluhopisových.
 
-Projekt byl již zahájen a měl by být dokončen do 30.09.26.
+Projekt pracuje s reálnými veřejně dostupnými daty z ČSOB JSON endpointu. Cílem je ukázat, že samotný historický výnos neposkytuje úplný obraz o chování fondu a že je potřeba současně sledovat volatilitu, propady, dobu zotavení, stabilitu výkonnosti a vzájemné souvislosti mezi fondy.
 
-Projekt bude pracovat s reálnými veřejně dostupnými daty získanými přes API a zaměří se například na:
-- kumulativní a anualizovaný výnos;
-- klouzavý 12měsíční výnos;
-- volatilitu;
-- maximální propad;
-- dobu zotavení;
-- nejlepší a nejhorší období;
-- případně korelaci výnosů mezi fondy.
+Hlavní oblasti:
+- získávání historických NAV dat z JSON endpointu;
+- ukládání raw snapshotů a validace vstupních dat;
+- inkrementální načítání do SQL Serveru;
+- hvězdicový model a analytické SQL tabulky;
+- výpočet kumulativního výnosu, CAGR, volatility, drawdownu a recovery time;
+- rolling 12M analýza, korelace a společné poklesy;
+- EDA a SDA v Pythonu;
+- třístránkový Power BI dashboard;
+- synchronizované slicery a dynamické společné období;
+- automatizované denní spuštění přes `.bat` a Windows Task Scheduler;
+- logging a kontrola jednotlivých běhů pipeline;
+- interpretace zjištění a doporučení bez formulace investičních doporučení.
 
 Hlavní technologický tok:
 ```text
-API
+ČSOB JSON endpoint
 → Python
-→ validace a výpočty
+→ raw data + validace
 → SQL Server / LocalDB
+→ analytické výpočty
 → Power BI
 ```
 
-Python bude použit také pro inkrementální načítání, logování a opakované spouštění procesu pomocí `.bat` souboru a Windows Task Scheduleru.
-
-Plánované hlavní technologie:
+Hlavní technologie:
 ```text
 Python
-API
 Pandas
+SciPy
+API / JSON
 SQL Server / LocalDB
 SQL
 Power BI
@@ -168,7 +183,13 @@ Git
 GitHub
 ```
 
-Cílem projektu je rozšířit portfolio o práci s API, Pythonem, časovými řadami a jednoduchým automatizovaným datovým procesem.
+![Dashboard - Přehled](projects/project-03-api-python-sql-power-bi/output/screenshots/01_overview.png)
+
+![Dashboard - Výkonnost a propady](projects/project-03-api-python-sql-power-bi/output/screenshots/02_performance_drawdowns.png)
+
+![Dashboard - Riziko a souvislosti](projects/project-03-api-python-sql-power-bi/output/screenshots/03_risk_relationships.png)
+
+Analytická zjištění a doporučení jsou shrnuta v projektu a ve větším detailu zde: [Zjištění a doporučení](projects/project-03-api-python-sql-power-bi/output/findings_and_recommendations.md).
 
 ➡️ [Otevřít Project 03](projects/project-03-api-python-sql-power-bi/)
 
