@@ -1,8 +1,8 @@
 import sys
 import pandas as pd
 import pyodbc
-matplotlib.use("Agg")
 import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 from scipy.stats import pearsonr, spearmanr
