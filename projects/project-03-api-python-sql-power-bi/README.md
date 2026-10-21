@@ -75,9 +75,10 @@ Sekundárními uživateli mohou být:
 
 Projekt používá dva hlavní typy zdrojů.
 
-| Zdroj                         | Obsah                         | Použití                   | Granularita                               |
-| ČSOB JSON prices endpoint     | historické NAV / ceny fondů   | hlavní časová řada        | 1 řádek = 1 fond, 1 dostupné datum, 1 NAV |    
-| KID a produktové informace    | metadata fondů                | popisná dimenze `DimFund` |
+| Zdroj | Obsah | Použití | Granularita |
+| --- | --- | --- | --- |
+| ČSOB JSON prices endpoint | historické NAV / ceny fondů | hlavní časová řada | 1 řádek = 1 fond, 1 dostupné datum, 1 NAV |
+| KID a produktové informace | metadata fondů | popisná dimenze `DimFund` | |
 
 Endpoint:
 ```text
@@ -290,13 +291,14 @@ Doplňkové analytické metriky:
 - Společné poklesy – počet fondů, které ve stejný den zaznamenaly záporný denní výnos. Analýza je prováděna pouze pro dny, kdy je denní výnos dostupný u všech šesti sledovaných fondů, a slouží k identifikaci období, kdy klesala většina fondů současně.
 
 Souhrn aktuálního analytického výstupu:
-| Fond                                      | Kumulativní výnos | CAGR      | Volatilita    | Max. drawdown | Zotavení |
-| ČSOB Akciový pro digitalizaci zodpovědný  | 209,8 %           | 39,3 %    | 23,1 %        | -28,3 %       | 184 dní |
-| ČSOB Akciový srdce Evropy                 | 130,7 %           | 27,8 %    | 13,9 %        | -12,3 %       | 32 dní |
-| ČSOB Premium Velmi odvážný                | 59,2 %            | 14,6 %    | 9,6 %         | -14,2 %       | 106 dní |
-| ČSOB Premium Velmi odvážný zodpovědný     | 55,7 %            | 13,9 %    | 10,0 %        | -14,1 %       | 106 dní |
-| ČSOB Krátkodobý                           | 13,7 %            | 3,8 %     | 0,6 %         | -0,6 %        | 45 dní |
-| ČSOB Dluhopisový                          | 11,7 %            | 3,3 %     | 2,3 %         | -2,5 %        | 99 dní |
+| Fond | Kumulativní výnos | CAGR | Volatilita | Max. drawdown | Zotavení |
+| --- | --- | --- | --- | --- | --- |
+| ČSOB Akciový pro digitalizaci zodpovědný | 209,8 % | 39,3 % | 23,1 % | -28,3 % | 184 dní |
+| ČSOB Akciový srdce Evropy | 130,7 % | 27,8 % | 13,9 % | -12,3 % | 32 dní |
+| ČSOB Premium Velmi odvážný | 59,2 % | 14,6 % | 9,6 % | -14,2 % | 106 dní |
+| ČSOB Premium Velmi odvážný zodpovědný | 55,7 % | 13,9 % | 10,0 % | -14,1 % | 106 dní |
+| ČSOB Krátkodobý | 13,7 % | 3,8 % | 0,6 % | -0,6 % | 45 dní |
+| ČSOB Dluhopisový | 11,7 % | 3,3 % | 2,3 % | -2,5 % | 99 dní |
 
 ---
 
@@ -417,13 +419,14 @@ Detail: [`output/findings_and_recommendations.md`](output/findings_and_recommend
 
 Doporučení projektu se netýkají nákupu nebo prodeje konkrétních fondů. Týkají se způsobu analytického hodnocení a reportingu.
 
-| Oblast            | Doporučení
-| Výnos vs. riziko  | Hodnotit výnos vždy společně s volatilitou, drawdownem a recovery time.
-| Stabilita         | Vedle konečných KPI sledovat rolling 12M a průběh drawdownu v čase.
-| Propady           | Odděleně sledovat hloubku propadu a dobu zotavení.
-| Korelace          | Posuzovat skutečné historické korelace, ne pouze kategorii fondu.
-| Stresová období   | Použít duben 2025 jako referenční období pro případnou detailnější analýzu.
-| Interpretace      | Závěry formulovat pouze pro 6 vybraných fondů a nezobecňovat je na celý trh.
+| Oblast | Doporučení |
+| --- | --- |
+| Výnos vs. riziko | Hodnotit výnos vždy společně s volatilitou, drawdownem a recovery time. |
+| Stabilita | Vedle konečných KPI sledovat rolling 12M a průběh drawdownu v čase. |
+| Propady | Odděleně sledovat hloubku propadu a dobu zotavení. |
+| Korelace | Posuzovat skutečné historické korelace, ne pouze kategorii fondu. |
+| Stresová období | Použít duben 2025 jako referenční období pro případnou detailnější analýzu. |
+| Interpretace | Závěry formulovat pouze pro 6 vybraných fondů a nezobecňovat je na celý trh. |
 
 Doporučení představují návrh analytického a reportingového přístupu, nikoliv investiční doporučení nebo garanci budoucího výsledku.
 
