@@ -60,13 +60,14 @@ Sekundárními uživateli jsou:
 
 Projekt pracuje se syntetickými CSV daty simulujícími pravidelné exporty z logistického systému.
 
-| Zdroj                     | Obsah                             | Granularita |
-| `shipments_YYYY_MM.csv`   | 24 měsíčních exportů zásilek      | 1 řádek = 1 zásilka |
-| `carriers.csv`            | dopravci                          | 1 řádek = 1 dopravce |
-| `warehouses.csv`          | sklady a jejich SLA               | 1 řádek = 1 sklad |
-| `regions.csv`             | regiony                           | 1 řádek = 1 region |
-| `service_levels.csv`      | přepravní služby                  | 1 řádek = 1 služba |
-| `complaints.csv`          | zákaznické stížnosti              | 1 řádek = 1 stížnost |
+| Zdroj | Obsah | Granularita |
+| --- | --- | --- |
+| `shipments_YYYY_MM.csv` | 24 měsíčních exportů zásilek | 1 řádek = 1 zásilka |
+| `carriers.csv` | dopravci | 1 řádek = 1 dopravce |
+| `warehouses.csv` | sklady a jejich SLA | 1 řádek = 1 sklad |
+| `regions.csv` | regiony | 1 řádek = 1 region |
+| `service_levels.csv` | přepravní služby | 1 řádek = 1 služba |
+| `complaints.csv` | zákaznické stížnosti | 1 řádek = 1 stížnost |
 
 Data pokrývají období **1. 1. 2025 – 31. 12. 2026** a vybrané regiony střední Evropy.
 
@@ -106,12 +107,13 @@ Referenční a pomocné dotazy zůstávají jako **pouze připojení**. Projekt 
 
 # Role nástrojů
 
-| Nástroj           | Role v projektu |
-| CSV               | zdrojová data a referenční tabulky |
-| Power Query       | načtení, spojení, čištění, validace a transformační logika |
-| Excel Data Model  | uložení finální analytické tabulky |
-| Excel             | kontingenční tabulky, EDA, statistická analýza, KPI a dashboard |
-| Git / GitHub      | verzování a publikace portfolio projektu |
+| Nástroj | Role v projektu |
+| --- | --- |
+| CSV | zdrojová data a referenční tabulky |
+| Power Query | načtení, spojení, čištění, validace a transformační logika |
+| Excel Data Model | uložení finální analytické tabulky |
+| Excel | kontingenční tabulky, EDA, statistická analýza, KPI a dashboard |
+| Git / GitHub | verzování a publikace portfolio projektu |
 
 Projekt nepoužívá Python ani SQL, proto neobsahuje Python závislosti, `.env` konfiguraci ani SQL/Python skripty.
 
@@ -160,18 +162,18 @@ Power Query zajišťuje:
 - agregaci stížností na úroveň zásilky;
 - výpočet analytických atributů.
 
-Hlavní odvozené atributy:
-| Atribut                       | Význam |
-| `Warehouse_Processing_Hours`  | doba od objednávky do expedice |
-| `Transit_Time_Days`           | doba od expedice do doručení |
+| Atribut | Význam |
+| --- | --- |
+| `Warehouse_Processing_Hours` | doba od objednávky do expedice |
+| `Transit_Time_Days` | doba od expedice do doručení |
 | `Total_Fulfilment_Lead_Time_Days` | celková doba od objednávky do doručení |
-| `Delay_Days`                  | délka zpoždění proti slíbenému termínu |
-| `On_Time_Flag`                | doručení včas |
-| `Late_Flag`                   | opožděné doručení |
-| `First_Attempt_Success_Flag`  | úspěšné doručení na první pokus |
-| `Warehouse_SLA_Flag`          | expedice v rámci skladového SLA |
-| `Complaint_Count`             | počet stížností na zásilku |
-| `Has_Complaint`               | zásilka má alespoň jednu stížnost |
+| `Delay_Days` | délka zpoždění proti slíbenému termínu |
+| `On_Time_Flag` | doručení včas |
+| `Late_Flag` | opožděné doručení |
+| `First_Attempt_Success_Flag` | úspěšné doručení na první pokus |
+| `Warehouse_SLA_Flag` | expedice v rámci skladového SLA |
+| `Complaint_Count` | počet stížností na zásilku |
+| `Has_Complaint` | zásilka má alespoň jednu stížnost |
 
 Finální analytická tabulka má granularitu:
 ```text
@@ -182,15 +184,15 @@ Finální analytická tabulka má granularitu:
 
 # KPI
 
-Hlavní KPI:
-| KPI                                       | Hodnota       | Business význam |
-| Podíl zásilek doručených včas             | **81,52 %**   | základní ukazatel spolehlivosti doručení |
-| Podíl opožděných zásilek                  | **18,48 %**   | četnost nedodržení slíbeného termínu |
-| Průměrné přepravní náklady na zásilku     | **165,03 Kč** | nákladová výkonnost přepravy |
-| Podíl zásilek doručených na první pokus   | **93,57 %**   | efektivita doručení |
-| Podíl zásilek expedovaných v rámci SLA    | **85,08 %**   | výkonnost skladového procesu |
-| Průměrná doba přepravy                    | **2,73 dne**  | rychlost přepravy |
-| Průměrná délka zpoždění                   | **1,17 dne**  | závažnost zpoždění |
+| KPI | Hodnota | Business význam |
+| --- | --- | --- |
+| Podíl zásilek doručených včas | **81,52 %** | základní ukazatel spolehlivosti doručení |
+| Podíl opožděných zásilek | **18,48 %** | četnost nedodržení slíbeného termínu |
+| Průměrné přepravní náklady na zásilku | **165,03 Kč** | nákladová výkonnost přepravy |
+| Podíl zásilek doručených na první pokus | **93,57 %** | efektivita doručení |
+| Podíl zásilek expedovaných v rámci SLA | **85,08 %** | výkonnost skladového procesu |
+| Průměrná doba přepravy | **2,73 dne** | rychlost přepravy |
+| Průměrná délka zpoždění | **1,17 dne** | závažnost zpoždění |
 
 Podílové KPI jsou počítány nad odpovídající populací, například včasnost a podíl opožděných zásilek pouze nad doručenými zásilkami.
 
@@ -220,11 +222,12 @@ Příklad provozního srovnání:
 
 Vybrané vztahy z EDA byly ověřeny pomocí Pearsonovy korelace a bodových grafů s lineárním trendem.
 
-| Vztah                                     | Pearson r | R² |
-| Měsíční objem zásilek × včasnost          | -0,871 | 0,759 |
-| Doba přepravy × včasnost                  | -0,995 | 0,991 |
-| Přepravní náklady × včasnost              | 0,893 | 0,797 |
-| Podíl stížností × včasnost                | -0,971 | 0,943 |
+| Vztah | Pearson r | R² |
+| --- | --- | --- |
+| Měsíční objem zásilek × včasnost | -0,871 | 0,759 |
+| Doba přepravy × včasnost | -0,995 | 0,991 |
+| Přepravní náklady × včasnost | 0,893 | 0,797 |
+| Podíl stížností × včasnost | -0,971 | 0,943 |
 | Podíl opožděných zásilek × délka zpoždění | 0,918 | 0,843 |
 
 Korelace na úrovni dopravců vycházejí pouze ze **6 agregovaných hodnot**, proto slouží jako podpůrný analytický signál, nikoliv jako důkaz příčiny.
@@ -288,13 +291,14 @@ Rozdíl mezi faktem a hypotézou je v interpretaci zachován. Například vyšš
 
 # Doporučení
 
-| Oblast    | Doporučení | Vlastník |
-| Q4        | Před další Q4 analyzovat listopad a prosinec podle dopravce, skladu a typu výjimky. | Manažer logistiky |
-| Dopravci  | Hodnotit dopravce současně podle včasnosti, doby přepravy, nákladů a stížností. | Manažer logistiky / nákup |
-| Ostrava   | Porovnat proces Ostravy s Brnem a prověřit místa, kde vzniká zdržení. | Manažer skladu Ostrava / manažer logistiky |
+| Oblast | Doporučení | Vlastník |
+| --- | --- | --- |
+| Q4 | Před další Q4 analyzovat listopad a prosinec podle dopravce, skladu a typu výjimky. | Manažer logistiky |
+| Dopravci | Hodnotit dopravce současně podle včasnosti, doby přepravy, nákladů a stížností. | Manažer logistiky / nákup |
+| Ostrava | Porovnat proces Ostravy s Brnem a prověřit místa, kde vzniká zdržení. | Manažer skladu Ostrava / manažer logistiky |
 | Stížnosti | Sledovat včasnost a stížnosti společně a analyzovat jejich konkrétní důvody. | Manažer logistiky / zákaznický servis |
-| Výjimky   | Rozdělit hlavní typy výjimek podle dopravce a měsíce a porovnat je s včasností. | Manažer logistiky |
-| Zpoždění  | Při řízení výkonu sledovat především podíl opožděných zásilek podle dopravce. | Manažer logistiky |
+| Výjimky | Rozdělit hlavní typy výjimek podle dopravce a měsíce a porovnat je s včasností. | Manažer logistiky |
+| Zpoždění | Při řízení výkonu sledovat především podíl opožděných zásilek podle dopravce. | Manažer logistiky |
 
 Očekávaným přínosem je lepší příprava na riziková období, vyváženější rozhodování mezi cenou a kvalitou služby a cílenější prověřování problémových oblastí. Jde o očekávaný přínos, nikoliv garantovaný výsledek.
 
