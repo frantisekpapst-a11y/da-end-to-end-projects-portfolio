@@ -61,13 +61,14 @@ Sekundárními uživateli jsou:
 
 Projekt používá syntetická CSV data simulující výstupy provozních systémů. Hlavní transformační a business logiku zajišťuje SQL Server.
 
-| Zdroj                 | Obsah                     | Granularita |
-| `customers.csv`       | zákazníci a region        | 1 řádek = 1 zákazník |
-| `subscriptions.csv`   | historie předplatných     | 1 řádek = 1 předplatné |
-| `plans.csv`           | tarify a měsíční ceny     | 1 řádek = 1 tarif |
-| `monthly_usage.csv`   | měsíční využívání služby  | 1 řádek = 1 předplatné × měsíc |
-| `billing.csv`         | měsíční fakturace         | 1 řádek = 1 předplatné × měsíc |
-| `support_cases.csv`   | případy zákaznické podpory| 1 řádek = 1 případ podpory |
+| Zdroj | Obsah | Granularita |
+| --- | --- | --- |
+| `customers.csv` | zákazníci a region | 1 řádek = 1 zákazník |
+| `subscriptions.csv` | historie předplatných | 1 řádek = 1 předplatné |
+| `plans.csv` | tarify a měsíční ceny | 1 řádek = 1 tarif |
+| `monthly_usage.csv` | měsíční využívání služby | 1 řádek = 1 předplatné × měsíc |
+| `billing.csv` | měsíční fakturace | 1 řádek = 1 předplatné × měsíc |
+| `support_cases.csv` | případy zákaznické podpory | 1 řádek = 1 případ podpory |
 
 Analyzované období je **09/2024–08/2026**.
 
@@ -104,12 +105,13 @@ SQL Server zajišťuje hlavní transformační a business logiku. Power BI nač�
 
 # Role nástrojů
 
-| Nástroj               | Role v projektu |
-| CSV                   | zdrojová data |
-| SQL Server LocalDB    | načtení, validace, čištění, transformace a analytická vrstva |
-| Power BI Desktop      | datový model, analýza a dashboard |
-| DAX                   | KPI a dynamické výpočty podle filtru |
-| Git / GitHub          | verzování a publikace portfolio projektu |
+| Nástroj | Role v projektu |
+| --- | --- |
+| CSV | zdrojová data |
+| SQL Server LocalDB | načtení, validace, čištění, transformace a analytická vrstva |
+| Power BI Desktop | datový model, analýza a dashboard |
+| DAX | KPI a dynamické výpočty podle filtru |
+| Git / GitHub | verzování a publikace portfolio projektu |
 
 Projekt nepoužívá Python ani Power BI Service.
 
@@ -181,12 +183,13 @@ Detailní popis modelu a DAX: [`docs/analytical_model_and_kpi.md`](docs/analytic
 # KPI
 
 Hlavní KPI dashboardu:
-| KPI               | Význam |
+| KPI | Význam |
+| --- | --- |
 | Aktivní zákazníci | počet zákazníků aktivních na konci měsíce |
-| Nové aktivace     | první aktivace zákazníků |
-| Míra churnu       | podíl churnů na zákaznících aktivních na začátku měsíce |
-| Míra reaktivace   | podíl reaktivací na zákaznících dostupných pro návrat |
-| Tržby             | měsíční fakturované tržby |
+| Nové aktivace | první aktivace zákazníků |
+| Míra churnu | podíl churnů na zákaznících aktivních na začátku měsíce |
+| Míra reaktivace | podíl reaktivací na zákaznících dostupných pro návrat |
+| Tržby | měsíční fakturované tržby |
 
 Hlavní KPI byly ověřeny proti SQL výsledkům.
 
@@ -284,14 +287,15 @@ Hlavní datově podložená zjištění:
 
 # Doporučení
 
-| Oblast            | Doporučení | Vlastník |
-| Prvních 6 měsíců  | Otestovat retenční pilot pro zákazníky v prvních 1–6 měsících. | Retention / Customer Success |
-| Basic             | Samostatně analyzovat a testovat retenční opatření pro tarif Basic. | Product / Commercial |
-| Technical Issues  | Prověřit nejčastější technické problémy spojené s ukončením. | Customer Support / Technical Operations |
-| Price             | Ověřit cenovou citlivost jednotlivých tarifních segmentů. | Pricing / Product |
-| Low Usage         | Prověřit, zda nízké využívání může sloužit jako časný varovný signál. | Product / CRM |
-| Reaktivace        | Testovat reaktivační komunikaci přibližně 3.–4. měsíc po ukončení. | CRM / Retention |
-| Monitoring        | Sledovat společně aktivní zákazníky, nové aktivace, ukončení, churn a reaktivace. | Management / Analytics |
+| Oblast | Doporučení | Vlastník |
+| --- | --- | --- |
+| Prvních 6 měsíců | Otestovat retenční pilot pro zákazníky v prvních 1–6 měsících. | Retention / Customer Success |
+| Basic | Samostatně analyzovat a testovat retenční opatření pro tarif Basic. | Product / Commercial |
+| Technical Issues | Prověřit nejčastější technické problémy spojené s ukončením. | Customer Support / Technical Operations |
+| Price | Ověřit cenovou citlivost jednotlivých tarifních segmentů. | Pricing / Product |
+| Low Usage | Prověřit, zda nízké využívání může sloužit jako časný varovný signál. | Product / CRM |
+| Reaktivace | Testovat reaktivační komunikaci přibližně 3.–4. měsíc po ukončení. | CRM / Retention |
+| Monitoring | Sledovat společně aktivní zákazníky, nové aktivace, ukončení, churn a reaktivace. | Management / Analytics |
 
 Doporučení představují návrhy k dalšímu ověření, nikoliv důkaz příčiny nebo garantovaný výsledek.
 
