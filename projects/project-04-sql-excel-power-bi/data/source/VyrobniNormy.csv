@@ -1,0 +1,7 @@
+﻿norma_id;vyrobek_id;stredisko_id;stroj_id;platnost_od;platnost_do;clovekohodiny_na_dobry_kus;strojove_hodiny_na_dobry_kus;planovana_mzdova_sazba
+NVP01;P01;C01;S01;2026-01-01;;0.12;0.04;280
+NVP02;P02;C01;S01;2026-01-01;;0.16;0.05;280
+NVP03;P03;C01;S02;2026-01-01;;0.22;0.07;280
+NVP04;P04;C02;S03;2026-01-01;;0.24;0.1;310
+NVP05;P05;C02;S03;2026-01-01;;0.3;0.12;310
+NVP06;P06;C02;S03;2026-01-01;;0.2;0.08;310

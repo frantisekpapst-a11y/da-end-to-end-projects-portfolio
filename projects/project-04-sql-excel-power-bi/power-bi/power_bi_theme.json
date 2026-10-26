@@ -1,0 +1,104 @@
+{
+  "name": "Manufacturing Controlling - Doosan Inspired",
+  "dataColors": [
+    "#005EB8",
+    "#8293A6",
+    "#00A5D7",
+    "#16456B",
+    "#00AD83",
+    "#A8BED3",
+    "#687687",
+    "#D08A22"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#243746",
+  "tableAccent": "#005EB8",
+  "good": "#168365",
+  "neutral": "#B77B16",
+  "bad": "#C43C45",
+  "firstLevelElements": "#243746",
+  "secondLevelElements": "#536779",
+  "thirdLevelElements": "#DFE6ED",
+  "fourthLevelElements": "#8293A6",
+  "secondaryBackground": "#EEF3F7",
+  "textClasses": {
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 28,
+      "color": "#005EB8"
+    },
+    "title": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 12,
+      "color": "#16456B"
+    },
+    "header": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 11,
+      "color": "#16456B"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#243746"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": {
+              "solid": {
+                "color": "#FFFFFF"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "title": [
+          {
+            "show": true,
+            "fontColor": {
+              "solid": {
+                "color": "#16456B"
+              }
+            },
+            "fontSize": 12,
+            "fontFamily": "Segoe UI Semibold"
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": {
+              "solid": {
+                "color": "#E8EEF4"
+              }
+            },
+            "transparency": 0
+          }
+        ],
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#DFE6ED"
+              }
+            },
+            "transparency": 0
+          }
+        ]
+      }
+    }
+  }
+}

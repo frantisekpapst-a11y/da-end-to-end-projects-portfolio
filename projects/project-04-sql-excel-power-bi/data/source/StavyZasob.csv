@@ -1,0 +1,43 @@
+﻿stav_id;datum_stavu;stredisko_id;kategorie_zasob;hodnota_zasob;poznamka
+ST03C01Mat;2026-03-31;C01;Material;180000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST03C01Ned;2026-03-31;C01;Nedokoncena vyroba;45000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST03C01Hot;2026-03-31;C01;Hotove vyrobky;100000.00;Výroba a expedice mají odlišné termíny
+ST03C02Mat;2026-03-31;C02;Material;210000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST03C02Ned;2026-03-31;C02;Nedokoncena vyroba;60000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST03C02Hot;2026-03-31;C02;Hotove vyrobky;125000.00;Výroba a expedice mají odlišné termíny
+ST04C01Mat;2026-04-30;C01;Material;194000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST04C01Ned;2026-04-30;C01;Nedokoncena vyroba;46500.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST04C01Hot;2026-04-30;C01;Hotove vyrobky;104000.00;Výroba a expedice mají odlišné termíny
+ST04C02Mat;2026-04-30;C02;Material;224000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST04C02Ned;2026-04-30;C02;Nedokoncena vyroba;66000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST04C02Hot;2026-04-30;C02;Hotove vyrobky;137000.00;Výroba a expedice mají odlišné termíny
+ST05C01Mat;2026-05-31;C01;Material;208000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST05C01Ned;2026-05-31;C01;Nedokoncena vyroba;48000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST05C01Hot;2026-05-31;C01;Hotove vyrobky;108000.00;Výroba a expedice mají odlišné termíny
+ST05C02Mat;2026-05-31;C02;Material;238000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST05C02Ned;2026-05-31;C02;Nedokoncena vyroba;72000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST05C02Hot;2026-05-31;C02;Hotove vyrobky;149000.00;Výroba a expedice mají odlišné termíny
+ST06C01Mat;2026-06-30;C01;Material;222000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST06C01Ned;2026-06-30;C01;Nedokoncena vyroba;49500.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST06C01Hot;2026-06-30;C01;Hotove vyrobky;112000.00;Výroba a expedice mají odlišné termíny
+ST06C02Mat;2026-06-30;C02;Material;252000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST06C02Ned;2026-06-30;C02;Nedokoncena vyroba;78000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST06C02Hot;2026-06-30;C02;Hotove vyrobky;161000.00;Výroba a expedice mají odlišné termíny
+ST07C01Mat;2026-07-31;C01;Material;236000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST07C01Ned;2026-07-31;C01;Nedokoncena vyroba;51000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST07C01Hot;2026-07-31;C01;Hotove vyrobky;116000.00;Výroba a expedice mají odlišné termíny
+ST07C02Mat;2026-07-31;C02;Material;266000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST07C02Ned;2026-07-31;C02;Nedokoncena vyroba;84000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST07C02Hot;2026-07-31;C02;Hotove vyrobky;173000.00;Výroba a expedice mají odlišné termíny
+ST08C01Mat;2026-08-31;C01;Material;250000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST08C01Ned;2026-08-31;C01;Nedokoncena vyroba;52500.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST08C01Hot;2026-08-31;C01;Hotove vyrobky;120000.00;Výroba a expedice mají odlišné termíny
+ST08C02Mat;2026-08-31;C02;Material;280000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST08C02Ned;2026-08-31;C02;Nedokoncena vyroba;90000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST08C02Hot;2026-08-31;C02;Hotove vyrobky;185000.00;Výroba a expedice mají odlišné termíny
+ST09C01Mat;2026-09-30;C01;Material;264000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST09C01Ned;2026-09-30;C01;Nedokoncena vyroba;54000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST09C01Hot;2026-09-30;C01;Hotove vyrobky;124000.00;Výroba a expedice mají odlišné termíny
+ST09C02Mat;2026-09-30;C02;Material;294000.00;Skladová hodnota, posoudit návaznost na plán spotřeby
+ST09C02Ned;2026-09-30;C02;Nedokoncena vyroba;96000.00;Samostatné otevřené zakázky mimo export dokončených zakázek
+ST09C02Hot;2026-09-30;C02;Hotove vyrobky;197000.00;Výroba a expedice mají odlišné termíny

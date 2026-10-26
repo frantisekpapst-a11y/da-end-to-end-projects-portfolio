@@ -1,0 +1,5 @@
+﻿material_id;nazev_materialu;skupina_materialu;merna_jednotka
+M01;Ocelový plech;Hutní materiál;kg
+M02;Pozinkovaný plech;Hutní materiál;kg
+M03;Ocelová kulatina;Hutní materiál;kg
+M04;Hliníková kulatina;Hutní materiál;kg

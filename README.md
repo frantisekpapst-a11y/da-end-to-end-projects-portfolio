@@ -2,15 +2,17 @@
 
 Portfolio praktických analytických projektů zaměřených na **řešení business problémů od zdrojových dat až po finální interpretaci a reporting**.
 
-Repozitář postupně pokrývá práci s Excelem, Power Query, SQL Serverem, Power BI, DAX, Pythonem, API a automatizací. Jednotlivé projekty používají různé business scénáře a technologie tak, aby se jejich zaměření zbytečně neopakovalo.
+Repozitář postupně pokrývá práci s Excelem, Power Query, SQL Serverem, Power BI, DAX, Pythonem, API a automatizací. Jednotlivé projekty používají různé business scénáře a technologie tak, aby se jejich zaměření zbytečně neopakovalo. Portfolio zahrnuje logistiku, zákaznickou retenci, investiční fondy a **výrobní controlling – náklady, provozní výkonnost a ekonomické rozhodování**.
 
 Hlavní důraz je kladen na:
+
 - pochopení business problému;
 - kontrolu kvality a přípravu dat;
 - přiměřený návrh transformačního procesu;
 - analytickou interpretaci;
 - KPI a datové modelování;
 - reporting a dashboardy;
+- propojení provozních ukazatelů s ekonomickým dopadem;
 - dokumentaci rozhodnutí, omezení a doporučení.
 
 ---
@@ -19,7 +21,6 @@ Hlavní důraz je kladen na:
 
 ```text
 da-end-to-end-projects-portfolio/
-
 ├── projects/
 │   ├── project-01-csv-excel-power-query/
 │   │   ├── data/
@@ -36,19 +37,29 @@ da-end-to-end-projects-portfolio/
 │   │   ├── .gitignore
 │   │   └── README.md
 │   │
-│   └── project-03-api-python-sql-power-bi/
+│   ├── project-03-api-python-sql-power-bi/
+│   │   ├── data/
+│   │   ├── docs/
+│   │   ├── logs/
+│   │   ├── notebooks/
+│   │   ├── output/
+│   │   ├── power-bi/
+│   │   ├── python/
+│   │   ├── sql/
+│   │   ├── .gitignore
+│   │   ├── README.md
+│   │   ├── requirements.txt
+│   │   └── run_pipeline.bat
+│   │
+│   └── project-04-sql-excel-power-bi/
 │       ├── data/
-│       ├── docs/
-│       ├── logs/
-│       ├── notebooks/
+│       ├── excel/
 │       ├── output/
 │       ├── power-bi/
-│       ├── python/
+│       ├── production-controlling-cheatsheet/
 │       ├── sql/
 │       ├── .gitignore
-│       ├── README.md
-│       ├── requirements.txt
-│       └── run_pipeline.bat
+│       └── README.md
 │
 ├── workflow/
 │   └── analytical-workflow.md
@@ -69,6 +80,7 @@ Dokončený end-to-end projekt zaměřený na výkonnost logistického procesu s
 Projekt analyzuje **250 000 unikátních zásilek za období 2025 a 2026**, referenční data a zákaznické stížnosti. Cílem je identifikovat hlavní zdroje nedodržování dodacích termínů, porovnat výkonnost dopravců a skladů a určit oblasti vhodné pro další provozní opatření.
 
 Hlavní oblasti:
+
 - spojení 24 měsíčních CSV exportů;
 - čištění, validace a kontrola referenční integrity v Power Query;
 - příprava analytické tabulky v Excel Data Modelu;
@@ -78,6 +90,7 @@ Hlavní oblasti:
 - interpretace zjištění a návrh doporučení.
 
 Hlavní technologie:
+
 ```text
 Excel
 Power Query
@@ -103,6 +116,7 @@ Dokončený end-to-end projekt zaměřený na zákaznickou retenci, churn, reakt
 Projekt analyzuje **40 000 zákazníků, 44 277 předplatných a období 09/2024–08/2026**. Cílem je zjistit, které zákaznické skupiny odcházejí častěji, kdy je riziko odchodu nejvyšší, jaké důvody zákazníci uvádějí a jak se vyvíjejí návraty zákazníků a tržby.
 
 Hlavní oblasti:
+
 - načtení 6 CSV zdrojů do SQL Serveru;
 - datové vrstvy `raw → staging → clean → analytics`;
 - kontrola kvality, čištění, validace a reconciliation;
@@ -115,6 +129,7 @@ Hlavní oblasti:
 - interpretace zjištění a návrh business doporučení.
 
 Hlavní technologie:
+
 ```text
 SQL Server / LocalDB
 SQL
@@ -143,6 +158,7 @@ Dokončený end-to-end projekt zaměřený na historickou výkonnost a rizikové
 Projekt pracuje s reálnými veřejně dostupnými daty z ČSOB JSON endpointu. Cílem je ukázat, že samotný historický výnos neposkytuje úplný obraz o chování fondu a že je potřeba současně sledovat volatilitu, propady, dobu zotavení, stabilitu výkonnosti a vzájemné souvislosti mezi fondy.
 
 Hlavní oblasti:
+
 - získávání historických NAV dat z JSON endpointu;
 - ukládání raw snapshotů a validace vstupních dat;
 - inkrementální načítání do SQL Serveru;
@@ -157,6 +173,7 @@ Hlavní oblasti:
 - interpretace zjištění a doporučení bez formulace investičních doporučení.
 
 Hlavní technologický tok:
+
 ```text
 ČSOB JSON endpoint
 → Python
@@ -167,6 +184,7 @@ Hlavní technologický tok:
 ```
 
 Hlavní technologie:
+
 ```text
 Python
 Pandas
@@ -195,11 +213,59 @@ Analytická zjištění a doporučení jsou shrnuta v projektu a ve větším de
 
 ---
 
+## ✅ Project 04 — Manufacturing Cost & Performance Controlling
+
+**SQL Server + Power Query + Excel + Power BI + DAX**
+
+Dokončený end-to-end projekt zaměřený na **výrobní controlling, nákladové odchylky a provozní výkonnost** smyšlené firmy vyrábějící kovové součástky.
+
+Projekt zahrnuje **6 výrobků, 2 výrobní střediska a 3 stroje za období duben–září 2026**, s detailním vyhodnocením září a výchozím stavem zásob na konci března. Cílem je porovnat náklady s plánem a normami pro skutečnou výrobu, určit hlavní odchylky a posoudit jednu dodatečnou zakázku.
+
+Hlavní oblasti:
+
+- načtení CSV, validace a čištění ve vrstvách `raw → staging → clean → analytics`;
+- samostatná agregace materiálu a práce bez násobení nákladů při spojování;
+- propojení výroby, skutečnosti, norem a rozpočtu v Power Query;
+- materiálová cenová a spotřební odchylka, mzdová odchylka hodin a sazby;
+- režie po uzávěrkových úpravách proti původnímu rozpočtu;
+- produktivita, zmetkovitost, prostoje a vývoj zásob;
+- Excelové přehledy, trendy, úplná kalkulace a dodatečná zakázka;
+- datový model se sdílenými dimenzemi, DAX a třístránkový Power BI report;
+- interpretace výsledků a doporučení pro výrobu, nákup a údržbu.
+
+Hlavní technologie:
+
+```text
+SQL Server / T-SQL
+Power Query
+Excel
+Power BI
+DAX
+VS Code
+Git
+GitHub
+```
+
+![Dashboard - Náklady a odchylky](projects/project-04-sql-excel-power-bi/output/screenshots/01_cost_overview.png)
+
+![Dashboard - Výroba a zásoby](projects/project-04-sql-excel-power-bi/output/screenshots/02_production_inventory.png)
+
+![Excel - Souhrn výrobních nákladů](projects/project-04-sql-excel-power-bi/output/screenshots/04_excel_cost_summary.png)
+
+![Excel - Kalkulace a dodatečná zakázka](projects/project-04-sql-excel-power-bi/output/screenshots/05_excel_costing_special_order.png)
+
+Závěry a doporučení: [Závěry a doporučení](projects/project-04-sql-excel-power-bi/output/findings_and_recommendations.md).
+
+➡️ [Otevřít Project 04](projects/project-04-sql-excel-power-bi/)
+
+---
+
 # 🧭 Analytický workflow
 
 Součástí repozitáře je také obecný analytický workflow používaný jako rámec pro plánování a realizaci jednotlivých projektů.
 
 Pokrývá zejména:
+
 ```text
 Business problém
 → datové zdroje
@@ -216,7 +282,7 @@ Business problém
 → dokumentace
 ```
 
-Workflow slouží jako praktická kontrolní struktura, ne jako požadavek použít ve všech projektech stejné technologie nebo všechny možné kroky.
+Workflow slouží jako praktická kontrolní struktura, ne jako požadavek použít ve všech projektech stejné technologie nebo všechny možné kroky. Ve výrobním controllingu jej doplňuje porovnání nákladů s normami pro skutečnou výrobu, provozními ukazateli a ekonomickými předpoklady rozhodnutí.
 
 ➡️ [Otevřít analytický workflow](workflow/analytical-workflow.md)
 
@@ -225,6 +291,7 @@ Workflow slouží jako praktická kontrolní struktura, ne jako požadavek použ
 # 🧩 Zaměření portfolia
 
 Jednotlivé projekty jsou záměrně postavené tak, aby ukazovaly odlišné analytické workflow:
+
 ```text
 Project 01
 → Excel + Power Query
@@ -240,6 +307,12 @@ Project 03
 → API + Python + SQL Server + Power BI
 → investiční fondy
 → získávání dat, automatizace a analýza časových řad
+
+Project 04
+→ SQL Server + Power Query + Excel + Power BI
+→ výrobní controlling
+→ nákladové odchylky, provozní KPI a ekonomické rozhodování
+→ SQL příprava dat, Power Query transformace, Excel kalkulace a Power BI reporting
 ```
 
 Cílem není použít všechny technologie v každém projektu, ale dát každému nástroji jasnou roli podle konkrétního business a datového problému.
@@ -252,7 +325,7 @@ Cílem není použít všechny technologie v každém projektu, ale dát každé
 Excel
 Power Query
 Excel Data Model
-SQL
+SQL / T-SQL
 SQL Server LocalDB
 Power BI
 DAX
@@ -268,6 +341,10 @@ statistical analysis
 KPI
 dashboarding
 automation
+manufacturing controlling
+cost variance analysis
+product costing
+decision analysis
 Git
 GitHub
 VS Code

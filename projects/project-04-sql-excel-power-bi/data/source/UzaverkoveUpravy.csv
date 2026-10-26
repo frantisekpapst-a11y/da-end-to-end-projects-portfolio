@@ -1,0 +1,7 @@
+﻿uprava_id;mesic;stredisko_id;kategorie_rezie;souvisejici_polozka_id;prostoj_id;typ_upravy;popis;castka_upravy
+U09C0101;2026-09-01;C01;Udrzba;RE09C01FUT;;Presun do dalsiho obdobi;Služba nebyla do konce září provedena;-12000
+U09C0102;2026-09-01;C01;Pojisteni;;;Mesicni casove rozliseni;Roční pojistné 72000 Kč bylo zaplaceno předem a evidováno mimo náklady;6000
+U09C0103;2026-09-01;C01;Udrzba;;D09P0101;Nevyfakturovana oprava;Oprava dokončená v září, potvrzeno údržbou, faktura dosud nedoručena;9000
+U09C0201;2026-09-01;C02;Udrzba;RE09C02FUT;;Presun do dalsiho obdobi;Služba nebyla do konce září provedena;-12000
+U09C0202;2026-09-01;C02;Pojisteni;;;Mesicni casove rozliseni;Roční pojistné 72000 Kč bylo zaplaceno předem a evidováno mimo náklady;6000
+U09C0203;2026-09-01;C02;Udrzba;;D09P0401;Nevyfakturovana oprava;Oprava dokončená v září, potvrzeno údržbou, faktura dosud nedoručena;18500

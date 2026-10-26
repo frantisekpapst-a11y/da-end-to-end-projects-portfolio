@@ -1,0 +1,17 @@
+# SQL Server – soubory databáze
+*.mdf
+*.ndf
+*.ldf
+*.bak
+
+# Dočasné soubory
+*.tmp
+~$*
+
+# Soubory zámků
+*.lock
+
+# Power BI – místní nastavení a mezipaměť projektu
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+**/.pbi/unappliedChanges.json

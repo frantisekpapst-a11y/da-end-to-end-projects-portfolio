@@ -1,0 +1,433 @@
+﻿prostoj_id;stroj_id;zakazka_id;datum;smena;duvod_prostoje;popis;delka_prostoje_h
+D04P0101;S01;Z04P0101;2026-04-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2721
+D04P0102;S01;Z04P0102;2026-04-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2721
+D04P0103;S01;Z04P0103;2026-04-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2671
+D04P0104;S01;Z04P0104;2026-04-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2671
+D04P0105;S01;Z04P0105;2026-04-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2671
+D04P0106;S01;Z04P0106;2026-04-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2671
+D04P0107;S01;Z04P0107;2026-04-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2671
+D04P0108;S01;Z04P0108;2026-04-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2671
+D04P0109;S01;Z04P0109;2026-04-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2671
+D04P0110;S01;Z04P0110;2026-04-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2671
+D04P0111;S01;Z04P0111;2026-04-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2671
+D04P0112;S01;Z04P0112;2026-04-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2671
+D04P0201;S01;Z04P0201;2026-04-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2898
+D04P0202;S01;Z04P0202;2026-04-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2898
+D04P0203;S01;Z04P0203;2026-04-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2898
+D04P0204;S01;Z04P0204;2026-04-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2898
+D04P0205;S01;Z04P0205;2026-04-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2898
+D04P0206;S01;Z04P0206;2026-04-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2898
+D04P0207;S01;Z04P0207;2026-04-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2898
+D04P0208;S01;Z04P0208;2026-04-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2898
+D04P0209;S01;Z04P0209;2026-04-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2898
+D04P0210;S01;Z04P0210;2026-04-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2898
+D04P0211;S01;Z04P0211;2026-04-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2898
+D04P0212;S01;Z04P0212;2026-04-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2898
+D04P0301;S02;Z04P0301;2026-04-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3528
+D04P0302;S02;Z04P0302;2026-04-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3528
+D04P0303;S02;Z04P0303;2026-04-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3528
+D04P0304;S02;Z04P0304;2026-04-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3528
+D04P0305;S02;Z04P0305;2026-04-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3528
+D04P0306;S02;Z04P0306;2026-04-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3440
+D04P0307;S02;Z04P0307;2026-04-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3440
+D04P0308;S02;Z04P0308;2026-04-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3440
+D04P0309;S02;Z04P0309;2026-04-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3440
+D04P0310;S02;Z04P0310;2026-04-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3440
+D04P0311;S02;Z04P0311;2026-04-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3440
+D04P0312;S02;Z04P0312;2026-04-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3440
+D04P0401;S03;Z04P0401;2026-04-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4284
+D04P0402;S03;Z04P0402;2026-04-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4284
+D04P0403;S03;Z04P0403;2026-04-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4284
+D04P0404;S03;Z04P0404;2026-04-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4284
+D04P0405;S03;Z04P0405;2026-04-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4284
+D04P0406;S03;Z04P0406;2026-04-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4284
+D04P0407;S03;Z04P0407;2026-04-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4284
+D04P0408;S03;Z04P0408;2026-04-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4284
+D04P0409;S03;Z04P0409;2026-04-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4284
+D04P0410;S03;Z04P0410;2026-04-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4158
+D04P0411;S03;Z04P0411;2026-04-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4158
+D04P0412;S03;Z04P0412;2026-04-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4158
+D04P0501;S03;Z04P0501;2026-04-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4233
+D04P0502;S03;Z04P0502;2026-04-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4233
+D04P0503;S03;Z04P0503;2026-04-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4233
+D04P0504;S03;Z04P0504;2026-04-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4233
+D04P0505;S03;Z04P0505;2026-04-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4233
+D04P0506;S03;Z04P0506;2026-04-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4233
+D04P0507;S03;Z04P0507;2026-04-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4233
+D04P0508;S03;Z04P0508;2026-04-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4233
+D04P0509;S03;Z04P0509;2026-04-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4233
+D04P0510;S03;Z04P0510;2026-04-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4233
+D04P0511;S03;Z04P0511;2026-04-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4082
+D04P0512;S03;Z04P0512;2026-04-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4082
+D04P0601;S03;Z04P0601;2026-04-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3830
+D04P0602;S03;Z04P0602;2026-04-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3830
+D04P0603;S03;Z04P0603;2026-04-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3830
+D04P0604;S03;Z04P0604;2026-04-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3830
+D04P0605;S03;Z04P0605;2026-04-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3830
+D04P0606;S03;Z04P0606;2026-04-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3830
+D04P0607;S03;Z04P0607;2026-04-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3830
+D04P0608;S03;Z04P0608;2026-04-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3830
+D04P0609;S03;Z04P0609;2026-04-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3830
+D04P0610;S03;Z04P0610;2026-04-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3830
+D04P0611;S03;Z04P0611;2026-04-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3729
+D04P0612;S03;Z04P0612;2026-04-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3729
+D05P0101;S01;Z05P0101;2026-05-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2923
+D05P0102;S01;Z05P0102;2026-05-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2923
+D05P0103;S01;Z05P0103;2026-05-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2923
+D05P0104;S01;Z05P0104;2026-05-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2923
+D05P0105;S01;Z05P0105;2026-05-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2923
+D05P0106;S01;Z05P0106;2026-05-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2923
+D05P0107;S01;Z05P0107;2026-05-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2923
+D05P0108;S01;Z05P0108;2026-05-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2923
+D05P0109;S01;Z05P0109;2026-05-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2923
+D05P0110;S01;Z05P0110;2026-05-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2873
+D05P0111;S01;Z05P0111;2026-05-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2873
+D05P0112;S01;Z05P0112;2026-05-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2873
+D05P0201;S01;Z05P0201;2026-05-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3024
+D05P0202;S01;Z05P0202;2026-05-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3024
+D05P0203;S01;Z05P0203;2026-05-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3024
+D05P0204;S01;Z05P0204;2026-05-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3024
+D05P0205;S01;Z05P0205;2026-05-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3024
+D05P0206;S01;Z05P0206;2026-05-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3024
+D05P0207;S01;Z05P0207;2026-05-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3024
+D05P0208;S01;Z05P0208;2026-05-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3024
+D05P0209;S01;Z05P0209;2026-05-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3024
+D05P0210;S01;Z05P0210;2026-05-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2961
+D05P0211;S01;Z05P0211;2026-05-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2961
+D05P0212;S01;Z05P0212;2026-05-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2961
+D05P0301;S02;Z05P0301;2026-05-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3792
+D05P0302;S02;Z05P0302;2026-05-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3792
+D05P0303;S02;Z05P0303;2026-05-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3792
+D05P0304;S02;Z05P0304;2026-05-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3792
+D05P0305;S02;Z05P0305;2026-05-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3792
+D05P0306;S02;Z05P0306;2026-05-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3792
+D05P0307;S02;Z05P0307;2026-05-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3704
+D05P0308;S02;Z05P0308;2026-05-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3704
+D05P0309;S02;Z05P0309;2026-05-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3704
+D05P0310;S02;Z05P0310;2026-05-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3704
+D05P0311;S02;Z05P0311;2026-05-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3704
+D05P0312;S02;Z05P0312;2026-05-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3704
+D05P0401;S03;Z05P0401;2026-05-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4284
+D05P0402;S03;Z05P0402;2026-05-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4284
+D05P0403;S03;Z05P0403;2026-05-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4284
+D05P0404;S03;Z05P0404;2026-05-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4284
+D05P0405;S03;Z05P0405;2026-05-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4284
+D05P0406;S03;Z05P0406;2026-05-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4284
+D05P0407;S03;Z05P0407;2026-05-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4284
+D05P0408;S03;Z05P0408;2026-05-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4284
+D05P0409;S03;Z05P0409;2026-05-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4158
+D05P0410;S03;Z05P0410;2026-05-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4158
+D05P0411;S03;Z05P0411;2026-05-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4158
+D05P0412;S03;Z05P0412;2026-05-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4158
+D05P0501;S03;Z05P0501;2026-05-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4536
+D05P0502;S03;Z05P0502;2026-05-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4536
+D05P0503;S03;Z05P0503;2026-05-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4536
+D05P0504;S03;Z05P0504;2026-05-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4536
+D05P0505;S03;Z05P0505;2026-05-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4536
+D05P0506;S03;Z05P0506;2026-05-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4536
+D05P0507;S03;Z05P0507;2026-05-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4536
+D05P0508;S03;Z05P0508;2026-05-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4536
+D05P0509;S03;Z05P0509;2026-05-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4384
+D05P0510;S03;Z05P0510;2026-05-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4384
+D05P0511;S03;Z05P0511;2026-05-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4384
+D05P0512;S03;Z05P0512;2026-05-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4384
+D05P0601;S03;Z05P0601;2026-05-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4132
+D05P0602;S03;Z05P0602;2026-05-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4132
+D05P0603;S03;Z05P0603;2026-05-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4032
+D05P0604;S03;Z05P0604;2026-05-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4032
+D05P0605;S03;Z05P0605;2026-05-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4032
+D05P0606;S03;Z05P0606;2026-05-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4032
+D05P0607;S03;Z05P0607;2026-05-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4032
+D05P0608;S03;Z05P0608;2026-05-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4032
+D05P0609;S03;Z05P0609;2026-05-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4032
+D05P0610;S03;Z05P0610;2026-05-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4032
+D05P0611;S03;Z05P0611;2026-05-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4032
+D05P0612;S03;Z05P0612;2026-05-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4032
+D06P0101;S01;Z06P0101;2026-06-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2873
+D06P0102;S01;Z06P0102;2026-06-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2873
+D06P0103;S01;Z06P0103;2026-06-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2873
+D06P0104;S01;Z06P0104;2026-06-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2873
+D06P0105;S01;Z06P0105;2026-06-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2873
+D06P0106;S01;Z06P0106;2026-06-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2873
+D06P0107;S01;Z06P0107;2026-06-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2873
+D06P0108;S01;Z06P0108;2026-06-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2822
+D06P0109;S01;Z06P0109;2026-06-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2822
+D06P0110;S01;Z06P0110;2026-06-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2822
+D06P0111;S01;Z06P0111;2026-06-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2822
+D06P0112;S01;Z06P0112;2026-06-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2822
+D06P0201;S01;Z06P0201;2026-06-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3087
+D06P0202;S01;Z06P0202;2026-06-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3087
+D06P0203;S01;Z06P0203;2026-06-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3087
+D06P0204;S01;Z06P0204;2026-06-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3087
+D06P0205;S01;Z06P0205;2026-06-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3087
+D06P0206;S01;Z06P0206;2026-06-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3087
+D06P0207;S01;Z06P0207;2026-06-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3087
+D06P0208;S01;Z06P0208;2026-06-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3087
+D06P0209;S01;Z06P0209;2026-06-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3087
+D06P0210;S01;Z06P0210;2026-06-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3087
+D06P0211;S01;Z06P0211;2026-06-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3024
+D06P0212;S01;Z06P0212;2026-06-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3024
+D06P0301;S02;Z06P0301;2026-06-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3881
+D06P0302;S02;Z06P0302;2026-06-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3881
+D06P0303;S02;Z06P0303;2026-06-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3881
+D06P0304;S02;Z06P0304;2026-06-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3881
+D06P0305;S02;Z06P0305;2026-06-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3792
+D06P0306;S02;Z06P0306;2026-06-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3792
+D06P0307;S02;Z06P0307;2026-06-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3792
+D06P0308;S02;Z06P0308;2026-06-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3792
+D06P0309;S02;Z06P0309;2026-06-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3792
+D06P0310;S02;Z06P0310;2026-06-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3792
+D06P0311;S02;Z06P0311;2026-06-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3792
+D06P0312;S02;Z06P0312;2026-06-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3792
+D06P0401;S03;Z06P0401;2026-06-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4662
+D06P0402;S03;Z06P0402;2026-06-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4662
+D06P0403;S03;Z06P0403;2026-06-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4662
+D06P0404;S03;Z06P0404;2026-06-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4662
+D06P0405;S03;Z06P0405;2026-06-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4662
+D06P0406;S03;Z06P0406;2026-06-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4536
+D06P0407;S03;Z06P0407;2026-06-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4536
+D06P0408;S03;Z06P0408;2026-06-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4536
+D06P0409;S03;Z06P0409;2026-06-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4536
+D06P0410;S03;Z06P0410;2026-06-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4536
+D06P0411;S03;Z06P0411;2026-06-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4536
+D06P0412;S03;Z06P0412;2026-06-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4536
+D06P0501;S03;Z06P0501;2026-06-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4838
+D06P0502;S03;Z06P0502;2026-06-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4687
+D06P0503;S03;Z06P0503;2026-06-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4687
+D06P0504;S03;Z06P0504;2026-06-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4687
+D06P0505;S03;Z06P0505;2026-06-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4687
+D06P0506;S03;Z06P0506;2026-06-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4687
+D06P0507;S03;Z06P0507;2026-06-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4687
+D06P0508;S03;Z06P0508;2026-06-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4687
+D06P0509;S03;Z06P0509;2026-06-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4687
+D06P0510;S03;Z06P0510;2026-06-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4687
+D06P0511;S03;Z06P0511;2026-06-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4687
+D06P0512;S03;Z06P0512;2026-06-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4687
+D06P0601;S03;Z06P0601;2026-06-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4132
+D06P0602;S03;Z06P0602;2026-06-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4032
+D06P0603;S03;Z06P0603;2026-06-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4032
+D06P0604;S03;Z06P0604;2026-06-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4032
+D06P0605;S03;Z06P0605;2026-06-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4032
+D06P0606;S03;Z06P0606;2026-06-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4032
+D06P0607;S03;Z06P0607;2026-06-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4032
+D06P0608;S03;Z06P0608;2026-06-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4032
+D06P0609;S03;Z06P0609;2026-06-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4032
+D06P0610;S03;Z06P0610;2026-06-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4032
+D06P0611;S03;Z06P0611;2026-06-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4032
+D06P0612;S03;Z06P0612;2026-06-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4032
+D07P0101;S01;Z07P0101;2026-07-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2369
+D07P0102;S01;Z07P0102;2026-07-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2369
+D07P0103;S01;Z07P0103;2026-07-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2369
+D07P0104;S01;Z07P0104;2026-07-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2318
+D07P0105;S01;Z07P0105;2026-07-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2318
+D07P0106;S01;Z07P0106;2026-07-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2318
+D07P0107;S01;Z07P0107;2026-07-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2318
+D07P0108;S01;Z07P0108;2026-07-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2318
+D07P0109;S01;Z07P0109;2026-07-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2318
+D07P0110;S01;Z07P0110;2026-07-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2318
+D07P0111;S01;Z07P0111;2026-07-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2318
+D07P0112;S01;Z07P0112;2026-07-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2318
+D07P0201;S01;Z07P0201;2026-07-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2583
+D07P0202;S01;Z07P0202;2026-07-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2583
+D07P0203;S01;Z07P0203;2026-07-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2583
+D07P0204;S01;Z07P0204;2026-07-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2583
+D07P0205;S01;Z07P0205;2026-07-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2520
+D07P0206;S01;Z07P0206;2026-07-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2520
+D07P0207;S01;Z07P0207;2026-07-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2520
+D07P0208;S01;Z07P0208;2026-07-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2520
+D07P0209;S01;Z07P0209;2026-07-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2520
+D07P0210;S01;Z07P0210;2026-07-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2520
+D07P0211;S01;Z07P0211;2026-07-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2520
+D07P0212;S01;Z07P0212;2026-07-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2520
+D07P0301;S02;Z07P0301;2026-07-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3087
+D07P0302;S02;Z07P0302;2026-07-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3087
+D07P0303;S02;Z07P0303;2026-07-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3087
+D07P0304;S02;Z07P0304;2026-07-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3087
+D07P0305;S02;Z07P0305;2026-07-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3087
+D07P0306;S02;Z07P0306;2026-07-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3087
+D07P0307;S02;Z07P0307;2026-07-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3087
+D07P0308;S02;Z07P0308;2026-07-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3087
+D07P0309;S02;Z07P0309;2026-07-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3087
+D07P0310;S02;Z07P0310;2026-07-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2999
+D07P0311;S02;Z07P0311;2026-07-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2999
+D07P0312;S02;Z07P0312;2026-07-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2999
+D07P0401;S03;Z07P0401;2026-07-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3654
+D07P0402;S03;Z07P0402;2026-07-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3654
+D07P0403;S03;Z07P0403;2026-07-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3654
+D07P0404;S03;Z07P0404;2026-07-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3654
+D07P0405;S03;Z07P0405;2026-07-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3654
+D07P0406;S03;Z07P0406;2026-07-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3528
+D07P0407;S03;Z07P0407;2026-07-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3528
+D07P0408;S03;Z07P0408;2026-07-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3528
+D07P0409;S03;Z07P0409;2026-07-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3528
+D07P0410;S03;Z07P0410;2026-07-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3528
+D07P0411;S03;Z07P0411;2026-07-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3528
+D07P0412;S03;Z07P0412;2026-07-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3528
+D07P0501;S03;Z07P0501;2026-07-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3477
+D07P0502;S03;Z07P0502;2026-07-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3477
+D07P0503;S03;Z07P0503;2026-07-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3477
+D07P0504;S03;Z07P0504;2026-07-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3477
+D07P0505;S03;Z07P0505;2026-07-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3477
+D07P0506;S03;Z07P0506;2026-07-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3477
+D07P0507;S03;Z07P0507;2026-07-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3477
+D07P0508;S03;Z07P0508;2026-07-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3477
+D07P0509;S03;Z07P0509;2026-07-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3477
+D07P0510;S03;Z07P0510;2026-07-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3326
+D07P0511;S03;Z07P0511;2026-07-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3326
+D07P0512;S03;Z07P0512;2026-07-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3326
+D07P0601;S03;Z07P0601;2026-07-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3125
+D07P0602;S03;Z07P0602;2026-07-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3125
+D07P0603;S03;Z07P0603;2026-07-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3125
+D07P0604;S03;Z07P0604;2026-07-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3125
+D07P0605;S03;Z07P0605;2026-07-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3125
+D07P0606;S03;Z07P0606;2026-07-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3125
+D07P0607;S03;Z07P0607;2026-07-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3125
+D07P0608;S03;Z07P0608;2026-07-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3125
+D07P0609;S03;Z07P0609;2026-07-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3024
+D07P0610;S03;Z07P0610;2026-07-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3024
+D07P0611;S03;Z07P0611;2026-07-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3024
+D07P0612;S03;Z07P0612;2026-07-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3024
+D08P0101;S01;Z08P0101;2026-08-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2520
+D08P0102;S01;Z08P0102;2026-08-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2520
+D08P0103;S01;Z08P0103;2026-08-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2520
+D08P0104;S01;Z08P0104;2026-08-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2520
+D08P0105;S01;Z08P0105;2026-08-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2520
+D08P0106;S01;Z08P0106;2026-08-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2469
+D08P0107;S01;Z08P0107;2026-08-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2469
+D08P0108;S01;Z08P0108;2026-08-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2469
+D08P0109;S01;Z08P0109;2026-08-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2469
+D08P0110;S01;Z08P0110;2026-08-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2469
+D08P0111;S01;Z08P0111;2026-08-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2469
+D08P0112;S01;Z08P0112;2026-08-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2469
+D08P0201;S01;Z08P0201;2026-08-02;Ranni;Porucha;Záznam ze směnového hlášení;0.2709
+D08P0202;S01;Z08P0202;2026-08-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.2709
+D08P0203;S01;Z08P0203;2026-08-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2709
+D08P0204;S01;Z08P0204;2026-08-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2709
+D08P0205;S01;Z08P0205;2026-08-10;Ranni;Porucha;Záznam ze směnového hlášení;0.2709
+D08P0206;S01;Z08P0206;2026-08-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.2709
+D08P0207;S01;Z08P0207;2026-08-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2709
+D08P0208;S01;Z08P0208;2026-08-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2709
+D08P0209;S01;Z08P0209;2026-08-18;Ranni;Porucha;Záznam ze směnového hlášení;0.2709
+D08P0210;S01;Z08P0210;2026-08-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.2646
+D08P0211;S01;Z08P0211;2026-08-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.2646
+D08P0212;S01;Z08P0212;2026-08-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.2646
+D08P0301;S02;Z08P0301;2026-08-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3671
+D08P0302;S02;Z08P0302;2026-08-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3671
+D08P0303;S02;Z08P0303;2026-08-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3671
+D08P0304;S02;Z08P0304;2026-08-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3671
+D08P0305;S02;Z08P0305;2026-08-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3671
+D08P0306;S02;Z08P0306;2026-08-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3671
+D08P0307;S02;Z08P0307;2026-08-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3671
+D08P0308;S02;Z08P0308;2026-08-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3671
+D08P0309;S02;Z08P0309;2026-08-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3671
+D08P0310;S02;Z08P0310;2026-08-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3574
+D08P0311;S02;Z08P0311;2026-08-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3574
+D08P0312;S02;Z08P0312;2026-08-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3574
+D08P0401;S03;Z08P0401;2026-08-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3906
+D08P0402;S03;Z08P0402;2026-08-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3906
+D08P0403;S03;Z08P0403;2026-08-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3906
+D08P0404;S03;Z08P0404;2026-08-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3780
+D08P0405;S03;Z08P0405;2026-08-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3780
+D08P0406;S03;Z08P0406;2026-08-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3780
+D08P0407;S03;Z08P0407;2026-08-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3780
+D08P0408;S03;Z08P0408;2026-08-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3780
+D08P0409;S03;Z08P0409;2026-08-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3780
+D08P0410;S03;Z08P0410;2026-08-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3780
+D08P0411;S03;Z08P0411;2026-08-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3780
+D08P0412;S03;Z08P0412;2026-08-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3780
+D08P0501;S03;Z08P0501;2026-08-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3931
+D08P0502;S03;Z08P0502;2026-08-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3931
+D08P0503;S03;Z08P0503;2026-08-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3931
+D08P0504;S03;Z08P0504;2026-08-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3931
+D08P0505;S03;Z08P0505;2026-08-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3931
+D08P0506;S03;Z08P0506;2026-08-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3931
+D08P0507;S03;Z08P0507;2026-08-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3931
+D08P0508;S03;Z08P0508;2026-08-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3780
+D08P0509;S03;Z08P0509;2026-08-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3780
+D08P0510;S03;Z08P0510;2026-08-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3780
+D08P0511;S03;Z08P0511;2026-08-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3780
+D08P0512;S03;Z08P0512;2026-08-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3780
+D08P0601;S03;Z08P0601;2026-08-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3528
+D08P0602;S03;Z08P0602;2026-08-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3528
+D08P0603;S03;Z08P0603;2026-08-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3528
+D08P0604;S03;Z08P0604;2026-08-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3528
+D08P0605;S03;Z08P0605;2026-08-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3528
+D08P0606;S03;Z08P0606;2026-08-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3427
+D08P0607;S03;Z08P0607;2026-08-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3427
+D08P0608;S03;Z08P0608;2026-08-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3427
+D08P0609;S03;Z08P0609;2026-08-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3427
+D08P0610;S03;Z08P0610;2026-08-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3427
+D08P0611;S03;Z08P0611;2026-08-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3427
+D08P0612;S03;Z08P0612;2026-08-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3427
+D09P0101;S01;Z09P0101;2026-09-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3326
+D09P0102;S01;Z09P0102;2026-09-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3326
+D09P0103;S01;Z09P0103;2026-09-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3326
+D09P0104;S01;Z09P0104;2026-09-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3276
+D09P0105;S01;Z09P0105;2026-09-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3276
+D09P0106;S01;Z09P0106;2026-09-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3276
+D09P0107;S01;Z09P0107;2026-09-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3276
+D09P0108;S01;Z09P0108;2026-09-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3276
+D09P0109;S01;Z09P0109;2026-09-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3276
+D09P0110;S01;Z09P0110;2026-09-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3276
+D09P0111;S01;Z09P0111;2026-09-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3276
+D09P0112;S01;Z09P0112;2026-09-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3276
+D09P0201;S01;Z09P0201;2026-09-02;Ranni;Porucha;Záznam ze směnového hlášení;0.3717
+D09P0202;S01;Z09P0202;2026-09-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.3717
+D09P0203;S01;Z09P0203;2026-09-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3717
+D09P0204;S01;Z09P0204;2026-09-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3717
+D09P0205;S01;Z09P0205;2026-09-10;Ranni;Porucha;Záznam ze směnového hlášení;0.3717
+D09P0206;S01;Z09P0206;2026-09-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.3717
+D09P0207;S01;Z09P0207;2026-09-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3717
+D09P0208;S01;Z09P0208;2026-09-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3717
+D09P0209;S01;Z09P0209;2026-09-18;Ranni;Porucha;Záznam ze směnového hlášení;0.3717
+D09P0210;S01;Z09P0210;2026-09-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.3654
+D09P0211;S01;Z09P0211;2026-09-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.3654
+D09P0212;S01;Z09P0212;2026-09-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.3654
+D09P0301;S02;Z09P0301;2026-09-02;Ranni;Porucha;Záznam ze směnového hlášení;0.4347
+D09P0302;S02;Z09P0302;2026-09-04;Ranni;Serizeni;Záznam ze směnového hlášení;0.4347
+D09P0303;S02;Z09P0303;2026-09-06;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4347
+D09P0304;S02;Z09P0304;2026-09-08;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4347
+D09P0305;S02;Z09P0305;2026-09-10;Ranni;Porucha;Záznam ze směnového hlášení;0.4347
+D09P0306;S02;Z09P0306;2026-09-12;Ranni;Serizeni;Záznam ze směnového hlášení;0.4347
+D09P0307;S02;Z09P0307;2026-09-14;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4347
+D09P0308;S02;Z09P0308;2026-09-16;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4347
+D09P0309;S02;Z09P0309;2026-09-18;Ranni;Porucha;Záznam ze směnového hlášení;0.4347
+D09P0310;S02;Z09P0310;2026-09-20;Ranni;Serizeni;Záznam ze směnového hlášení;0.4250
+D09P0311;S02;Z09P0311;2026-09-22;Ranni;Cekani na material;Záznam ze směnového hlášení;0.4250
+D09P0312;S02;Z09P0312;2026-09-24;Ranni;Cekani na dokumentaci;Záznam ze směnového hlášení;0.4250
+D09P0401;S03;Z09P0401;2026-09-02;Ranni;Porucha;Záznam ze směnového hlášení;1.2986
+D09P0402;S03;Z09P0402;2026-09-04;Ranni;Porucha;Záznam ze směnového hlášení;1.2986
+D09P0403;S03;Z09P0403;2026-09-06;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0404;S03;Z09P0404;2026-09-08;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0405;S03;Z09P0405;2026-09-10;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0406;S03;Z09P0406;2026-09-12;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0407;S03;Z09P0407;2026-09-14;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0408;S03;Z09P0408;2026-09-16;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0409;S03;Z09P0409;2026-09-18;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0410;S03;Z09P0410;2026-09-20;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0411;S03;Z09P0411;2026-09-22;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0412;S03;Z09P0412;2026-09-24;Ranni;Porucha;Záznam ze směnového hlášení;1.2644
+D09P0501;S03;Z09P0501;2026-09-02;Ranni;Porucha;Záznam ze směnového hlášení;1.1482
+D09P0502;S03;Z09P0502;2026-09-04;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0503;S03;Z09P0503;2026-09-06;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0504;S03;Z09P0504;2026-09-08;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0505;S03;Z09P0505;2026-09-10;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0506;S03;Z09P0506;2026-09-12;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0507;S03;Z09P0507;2026-09-14;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0508;S03;Z09P0508;2026-09-16;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0509;S03;Z09P0509;2026-09-18;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0510;S03;Z09P0510;2026-09-20;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0511;S03;Z09P0511;2026-09-22;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0512;S03;Z09P0512;2026-09-24;Ranni;Porucha;Záznam ze směnového hlášení;1.1072
+D09P0601;S03;Z09P0601;2026-09-02;Ranni;Porucha;Záznam ze směnového hlášení;1.0115
+D09P0602;S03;Z09P0602;2026-09-04;Ranni;Porucha;Záznam ze směnového hlášení;1.0115
+D09P0603;S03;Z09P0603;2026-09-06;Ranni;Porucha;Záznam ze směnového hlášení;1.0115
+D09P0604;S03;Z09P0604;2026-09-08;Ranni;Porucha;Záznam ze směnového hlášení;1.0115
+D09P0605;S03;Z09P0605;2026-09-10;Ranni;Porucha;Záznam ze směnového hlášení;1.0115
+D09P0606;S03;Z09P0606;2026-09-12;Ranni;Porucha;Záznam ze směnového hlášení;1.0115
+D09P0607;S03;Z09P0607;2026-09-14;Ranni;Porucha;Záznam ze směnového hlášení;0.9842
+D09P0608;S03;Z09P0608;2026-09-16;Ranni;Porucha;Záznam ze směnového hlášení;0.9842
+D09P0609;S03;Z09P0609;2026-09-18;Ranni;Porucha;Záznam ze směnového hlášení;0.9842
+D09P0610;S03;Z09P0610;2026-09-20;Ranni;Porucha;Záznam ze směnového hlášení;0.9842
+D09P0611;S03;Z09P0611;2026-09-22;Ranni;Porucha;Záznam ze směnového hlášení;0.9842
+D09P0612;S03;Z09P0612;2026-09-24;Ranni;Porucha;Záznam ze směnového hlášení;0.9842

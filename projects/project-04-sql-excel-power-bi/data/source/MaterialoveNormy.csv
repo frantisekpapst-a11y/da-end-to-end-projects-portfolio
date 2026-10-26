@@ -1,0 +1,7 @@
+﻿norma_id;vyrobek_id;material_id;platnost_od;platnost_do;mnozstvi_na_dobry_kus;planovana_cena_za_jednotku
+NMP01;P01;M01;2026-01-01;;1.2;48
+NMP02;P02;M01;2026-01-01;;1.8;48
+NMP03;P03;M02;2026-01-01;;2.4;54
+NMP04;P04;M03;2026-01-01;;2.1;72
+NMP05;P05;M04;2026-01-01;;3.0;86
+NMP06;P06;M04;2026-01-01;;1.6;86
