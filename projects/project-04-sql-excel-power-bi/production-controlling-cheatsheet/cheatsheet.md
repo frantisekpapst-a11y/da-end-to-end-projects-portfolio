@@ -18,6 +18,8 @@ Praktická příručka pro začínajícího výrobního controllera. Odborné an
 12. [Časté chyby a pracovní postup](#12-časté-chyby-a-pracovní-postup)
 13. [Česko-anglický slovníček a zkratky](#13-česko-anglický-slovníček-a-zkratky)
 
+**Doplněné průřezové části:** finanční výkazy, EBITDA, ROA/ROE a provozní páka (§ 2.6–2.9); CNC sazby a seřizování (§ 4.4–4.5); EBITDA bridge a režijní odchylky (§ 5.6–5.7); OEE a COPQ v penězích (§ 6.7–6.8); pracovní kapitál (§ 7.8); Make or Buy, CAPEX/NPV a zákaznická profitabilita (§ 8.8–8.10); směnnost a manažerský report (§ 9.6).
+
 ## 1. Role výrobního controllera
 
 **Anglicky:** výrobní controller = *manufacturing controller / plant controller*; výrobní controlling = *manufacturing controlling / plant controlling*. Výrobní controller propojuje provozní údaje s jejich ekonomickým dopadem. Pomáhá plánovat, vyhodnocovat výsledky, vysvětlovat náklady, odchylky a rizika a připravovat podklady pro rozhodnutí.
@@ -227,6 +229,60 @@ Rozdíl:
 
 **Náklady na kus vzrostly, přestože se nezměnily celkové fixní náklady ani variabilní náklady na kus.** Stejnou fixní částku jsme rozdělili mezi méně výrobků. Vyšší fixní náklad na kus tedy sám o sobě nedokazuje plýtvání. Může vzniknout pouze nižším objemem výroby. Platí také opačný vztah: vyšší výroba může snížit fixní náklady na kus, ale **samotné rozpočítání stejné částky mezi více kusů nevytváří úsporu**. Výroba navíc může zvýšit spotřebu materiálu, práce a hodnotu zásob. Musí proto mít ekonomické opodstatnění, například očekávaný odbyt nebo úsporu budoucích přesčasů. **Pozor:** rozpočítání fixních nákladů v této tabulce slouží k vysvětlení jednotkových nákladů. Nemění náš model výpočtu zisku ani dosavadní ocenění zásob pouze variabilními výrobními náklady.
 
+### 2.6 Finanční výkazy a vazba na výrobu
+
+**Pojmy:** rozvaha = *balance sheet*; výsledovka = *profit and loss statement (P&L) / income statement*; peněžní tok = *cash flow*; akruální princip = *accrual accounting*; aktiva = *assets*; pasiva = *equity and liabilities*. Finanční controlling výrobního závodu potřebuje rozlišovat **výsledek, stav majetku a pohyb peněz**.
+
+| Výkaz | Co ukazuje | Příklad z CNC závodu |
+| --- | --- | --- |
+| Rozvaha (*balance sheet*) | Majetek a jeho financování k určitému dni | CNC stroj, zásoby, pohledávky; kapitál a úvěry |
+| Výsledovka (*P&L*) | Výnosy a náklady za období | Tržby, spotřeba prodaných výrobků, mzdy, odpisy |
+| Cash flow (*cash flow statement*) | Skutečné příjmy a výdaje peněz | Platba za stroj, inkaso faktury, splátka úvěru |
+
+`Aktiva = vlastní kapitál + závazky`. **Příklad:** Aktiva 30 mil. Kč, závazky 18 mil. Kč → vlastní kapitál 12 mil. Kč. Nákup materiálu na fakturu za 2 mil. Kč zvýší zásoby i dodavatelské závazky o 2 mil. Kč; sám o sobě nezvýší zisk a nemusí ihned změnit hotovost. Materiálový náklad se promítá podle spotřeby a ocenění výroby/prodeje.
+
+**Časová souvislost:** v říjnu dodáme za 500 000 Kč, zákazník zaplatí v prosinci. Říjnové tržby a případný zisk mohou vzniknout již při dodání, říjnový příjem peněz nikoli; do inkasa evidujeme pohledávku.
+
+### 2.7 EBITDA, EBIT, čistý zisk a marže
+
+**Pojmy:** EBITDA = *Earnings Before Interest, Taxes, Depreciation and Amortisation*; EBIT = *Earnings Before Interest and Taxes*; čistý zisk = *net profit*; EBIT marže = *EBIT margin*; příspěvková marže = *contribution margin ratio*. EBITDA sleduje výsledek před odpisy, úroky a daněmi; EBIT po odpisech, ale před úroky a daněmi. Definici EBITDA a upravených ukazatelů vždy ověř podle firemního reportu.
+
+| Modelová výsledovka za měsíc | Kč |
+| --- | ---: |
+| Tržby | 8 000 000 |
+| Materiál, práce a ostatní provozní náklady bez odpisů | −5 600 000 |
+| **EBITDA** | **2 400 000** |
+| Odpisy | −400 000 |
+| **EBIT** | **2 000 000** |
+| Úroky | −100 000 |
+| Zisk před daní (*EBT*) | 1 900 000 |
+| Daň ze zisku v modelu | −399 000 |
+| **Čistý zisk** | **1 501 000** |
+
+`EBITDA = EBIT + odpisy a amortizace` (při srovnatelné definici); `EBIT marže = EBIT / tržby × 100`; `Příspěvková marže = příspěvek na úhradu / tržby × 100`.
+
+**Příklad marží:** cena 750 Kč, variabilní náklad 450 Kč → CM 300 Kč/ks a CM marže 40 %. Prodáme 4 000 ks, fixní provozní náklady 900 000 Kč, bez dalších položek → EBIT 300 000 Kč, tržby 3 mil. Kč, EBIT marže 10 %. Sleva 10 % na cenu při stejném objemu a nákladech sníží CM/ks na 225 Kč a EBIT na nulu. **Pokles ceny o 10 % tedy není automaticky pokles zisku o 10 %.**
+
+**Odpis versus platba:** CNC stroj za 15 mil. Kč s modelovou životností 5 let a nulovou zůstatkovou hodnotou → lineární účetní odpis 3 mil. Kč/rok; při nákupu vznikne peněžní výdaj, odpis se později promítá do EBIT bez nové platby. Po třech letech je při těchto předpokladech účetní zůstatková hodnota 6 mil. Kč.
+
+### 2.8 Rentabilita, likvidita a zadluženost — rychlé minimum
+
+**Pojmy:** rentabilita aktiv = *return on assets (ROA)*; rentabilita vlastního kapitálu = *return on equity (ROE)*; likvidita = *liquidity*; zadluženost = *leverage / indebtedness*. V tomto cheatsheetu používáme pro ROA provozní definici `EBIT / průměrná celková aktiva × 100` a pro ROE `čistý zisk / průměrný vlastní kapitál × 100`. Jiné metodiky mohou používat odlišné čitatele.
+
+| Ukazatel | Jednoduchý příklad | Interpretace |
+| --- | --- | --- |
+| EBIT marže | EBIT 8 mil. / tržby 100 mil. = 8 % | Provozní zisk ze 100 Kč tržeb |
+| ROA | EBIT 16 mil. / průměrná aktiva 100 mil. = 16 % | Provozní výnosnost účetně zachyceného majetku |
+| ROE | Čistý zisk 12 mil. / průměrný vlastní kapitál 40 mil. = 30 % | Účetní výnosnost vlastního kapitálu |
+| Běžná likvidita (*current ratio*) | Oběžná aktiva 15 mil. / krátkodobé závazky 10 mil. = 1,5 | Orientační krátkodobé krytí závazků |
+| Míra zadlužení (*debt-to-equity*) | Úročený dluh 20 mil. / vlastní kapitál 40 mil. = 50 % | Dluh vzhledem ke kapitálu; definuj, které dluhy zahrnuješ |
+
+**Pozor na srovnání závodů:** odpisovaný starší CNC stroj může mít nízkou účetní hodnotu, a tím mechanicky zvyšovat ROA, aniž by vyráběl efektivněji. Vyšší ROE může vyplývat z menšího vlastního kapitálu při větším zadlužení; nemusí znamenat nižší riziko. Likviditu nelze vyvozovat pouze z účetního zisku.
+
+### 2.9 Provozní páka a citlivost výsledku
+
+**Pojem:** provozní páka = *operating leverage*. Při stabilních fixních nákladech může zisk klesat procentuálně rychleji než prodej. **Příklad:** 30 000 prodaných kusů, cena 500 Kč, variabilní náklady 320 Kč/ks, fixní náklady 3,6 mil. Kč → EBIT 1,8 mil. Kč a marže 12 %. Při 24 000 kusech a stejných ostatních podmínkách → EBIT 720 000 Kč a marže 6 %. Prodej klesl o 20 %, EBIT o 60 %. Nižší objem proto vždy vyhodnoť s možnostmi **skutečně ušetřitelných** fixních a směnových nákladů.
+
 ## 3. Členění nákladů
 
 ### 3.1 Dvě nezávislé otázky
@@ -423,6 +479,22 @@ Rozlišuj dva různé údaje: Materiálové náklady vzrostly z 200 na 212 Kč/k
 `Zvýšení nákladů = (420 − 400) / 400 × 100 = 5 %`; `Pokles kalkulovaného zisku = (100 − 80) / 100 × 100 = 20 %`
 
 Stejná změna o 20 Kč představuje jiné procento podle toho, k jakému základu ji vztáhneme. **Co samotné porovnání ještě nevysvětluje** — Zvýšení materiálových nákladů o 12 Kč/ks může způsobit: vyšší cena materiálu; vyšší spotřeba na výrobek; kombinace obou vlivů. Podobně vyšší přiřazená režie na kus může souviset se změnou celkové režie, objemu výroby nebo využití rozvrhové základny. Podrobný rozklad těchto příčin následuje v kapitole 5.
+
+### 4.4 Strojní hodinová sazba a seřizování CNC
+
+**Pojmy:** strojní hodinová sazba = *machine-hour rate*; produktivní strojní hodiny = *productive machine hours*; seřízení = *setup / changeover*; výrobní dávka = *production batch / lot size*. Sazba musí mít jasně vymezené náklady, hodiny a způsob alokace, aby se režie nezapočítala dvakrát.
+
+`Plánovaná strojní sazba = plánované fixní náklady / plánované produktivní hodiny + variabilní náklady na hodinu`. **Příklad:** fixní náklady stroje 2 mil. Kč/rok, 4 000 plánovaných produktivních hodin a variabilní náklad 200 Kč/h → sazba `2 000 000 / 4 000 + 200 = 700 Kč/h`. Při skutečných 3 000 h vzniknou náklady `2 000 000 + 3 000 × 200 = 2 600 000 Kč`, skutečně `866,67 Kč/produktivní h`. Plánovaná kalkulační sazba může zůstat 700 Kč/h; rozdíl souvisí s využitím kapacity, nikoli se změnou variabilní sazby.
+
+**Nevyužitá fixní kapacita:** pokud fixní náklady 2 mil. Kč rozvrhujeme plánovanou sazbou 500 Kč/h, při skutečně využitých 3 000 produktivních hodinách pokryjeme pouze 1,5 mil. Kč → `500 000 Kč` fixní režie zůstává při této metodice nepokryto. Jde o kalkulační odchylku, nikoli automatický nový peněžní výdaj; při analýze rozlišuj odchylku objemu a skutečné výše režie.
+
+**Seřizování dávky:** 3 h × 600 Kč/h / 500 kusů = **3,60 Kč/ks**. Menší dávka 250 ks při stejném seřízení znamená **7,20 Kč/ks**. Větší dávky snižují seřízení na kus, mohou ale zvětšit zásoby a vázaný kapitál.
+
+**Kompletní kalkulace hřídele:** materiál 180 Kč; nástroje 20 Kč; CNC 12 min × 600 Kč/h = 120 Kč; ruční dokončování 6 min × 300 Kč/h = 30 Kč; seřízení 3,60 Kč; ostatní výrobní režie 40 Kč → **393,60 Kč/ks**. Prodejní cena 450 Kč → rozdíl **56,40 Kč/ks** a při 10 000 prodaných kusech 564 000 Kč před dalšími případnými náklady. Pro schválení ověř další zákaznické, obchodní a logistické náklady, rozsah fixní režie a kapacitní možnosti.
+
+### 4.5 Rozhodovací kalkulace versus úplné náklady
+
+Úplné náklady pomáhají dlouhodobě ověřit pokrytí všech nákladů. Pro jednorázovou objednávku nebo náhradní výrobu jsou rozhodující **budoucí rozdílové náklady a výnosy**; alokovanou fixní režii, která se rozhodnutím nezmění, nepočítej jako nový výdaj. **Příklad:** zakázka 300 ks za 750 Kč, variabilní náklady 600 Kč/ks, víkendové příplatky 35 000 Kč a dodatečné seřízení 15 000 Kč → `300 × (750 − 600) − 35 000 − 15 000 = −5 000 Kč`. Kladný CM na kus zde nestačí; dodatečná zakázka jako celek je ztrátová. Ověř také vytlačení jiných zakázek a možnost získat jiný ekonomický přínos.
 
 ## 5. Plán, skutečnost a odchylky
 
@@ -666,6 +738,36 @@ Dále zjistíme: Materiálové náklady překročily normu pro skutečnou výrob
 
 **O 50 000 Kč neklesl prodej, ale zisk v důsledku nižšího prodeje.** Prodané množství kleslo o 200 kusů. Materiálové a mzdové odchylky porovnáváme s normou pro skutečnou výrobu. Vliv objemu tak nezapočítáme podruhé. Předpoklady příkladu: Všechny vyrobené kusy se prodaly a zásoby se nemění. Prodejní cena a fixní náklady zůstaly stejné. Mzdová odchylka představuje rozdíl nákladů zahrnutých do použitého modelu; nejde automaticky o peněžní úsporu. Ostatní vlivy nejsou přítomné. Analýza prodejních odchylek může patřit jinému controllerovi. Výrobní controller potřebuje znát její relevantní dopad a souvislost s výrobou.
 
+### 5.6 EBITDA bridge — propojení výrobních odchylek s výsledkem
+
+**Pojmy:** můstek EBITDA = *EBITDA bridge / EBITDA waterfall*; dopad na zisk = *profit impact*. Jde o vysvětlení změny finančního výsledku mezi rozpočtem a skutečností; **nepříznivá nákladová odchylka má záporný dopad na EBITDA**.
+
+| Položka | Dopad |
+| --- | ---: |
+| Budget EBITDA | 8 000 000 Kč |
+| Materiálová cenová odchylka | −150 000 Kč |
+| Materiálová spotřební odchylka | −250 000 Kč |
+| Pracovní efektivita | −100 000 Kč |
+| Úspora energie | +80 000 Kč |
+| Vyšší prodejní objem — dodatečný CM | +600 000 Kč |
+| **Actual EBITDA** | **8 180 000 Kč** |
+
+`Celkový dopad = −150 −250 −100 +80 +600 = +180 tis. Kč`. **Lepší EBITDA automaticky nedokazuje efektivnější výrobu:** pozitivní vliv prodeje může zakrýt nadspotřebu. Materiálové a pracovní odchylky porovnávej se standardem pro skutečný objem; prodejní objem oceň plánovaným CM. Výslovně ověř, že se jednotlivé vlivy nepřekrývají.
+
+**Ovlivnitelnost (*controllability*):** úspora energie může vzniknout levnější nakoupenou kWh (cenový vliv), nižší spotřebou kWh (technický/provozní vliv) nebo objemem výroby. Rozhodování a odpovědnost se řídí skutečnými pravomocemi nákupu, výroby, technologie a údržby; nevkládej každou energetickou odchylku automaticky na výrobního ředitele.
+
+### 5.7 Variance fixní výrobní režie — jednoduchý rozklad
+
+**Pojmy:** odchylka výdajů fixní režie = *fixed overhead spending variance*; odchylka objemu fixní režie = *fixed overhead volume variance*; absorpce = *overhead absorption*. **Příklad:** plán fixní režie 1 mil. Kč a 5 000 normohodin → sazba 200 Kč/h. Skutečný objem výroby odpovídá 4 000 normohodinám, skutečná fixní režie 1 050 000 Kč.
+
+| Vliv | Výpočet | Nepříznivá odchylka |
+| --- | --- | ---: |
+| Výdajová | 1 050 000 − 1 000 000 | 50 000 Kč |
+| Objemová / nepokrytí režie | 1 000 000 − (4 000 × 200) | 200 000 Kč |
+| **Celkem vůči absorbované režii** | 1 050 000 − 800 000 | **250 000 Kč** |
+
+Objemová část představuje přiřazení fixní režie na nižší výkon, nikoli další útratu 200 000 Kč. Nákladový dopad do výsledovky závisí na ocenění zásob a metodice uzávěrky; neodečítej automaticky tutéž částku podruhé v EBITDA bridge.
+
 ## 6. Výrobní ukazatele a kapacita
 
 ### 6.1 Produktivita práce
@@ -856,6 +958,30 @@ Získali jsme jednu hodinu provozu navíc. Jde o modelový propočet při nezmě
 
 Běžné náklady stejné výroby zůstávají. Ušetříme dodatečný přesčasový náklad. **Pravidla interpretace** — OEE vztahujeme k vymezenému plánovanému výrobnímu času, nikoli automaticky ke všem kalendářním hodinám. Musíme sjednotit definice času, ideální rychlosti a dobrého kusu. Příklad předpokládá jeden výrobek. Nejnižší složka je podnětem k prověření; prioritu opatření určí také odstranitelnost ztráty, náklady a ekonomický přínos. Souhrnné OEE nevytváříme prostým průměrem směnových procent. Vycházíme ze základních časů, množství a odpovídajících ideálních časů.
 
+### 6.7 Finanční dopad OEE a prostojů
+
+OEE je **provozní poměr, nikoli samo o sobě finanční ztráta**. Finanční efekt ztráty dostupnosti, výkonu či kvality záleží na úzkém místě, poptávce, možnosti nahradit výrobu a skutečně změněných nákladech.
+
+**Příklad:** preventivní údržba obnoví 30 h/měsíc na úzkém místě; ideální cyklus 10 min/ks, poptávka stačí, všechny dodatečné kusy jsou dobré; CM 180 Kč/ks; údržba navíc 12 000 Kč/měsíc. `30 × 60 / 10 = 180 ks`; `180 × 180 = 32 400 Kč CM`; `čistý přínos = 32 400 − 12 000 = 20 400 Kč/měsíc`. Pokud nemáme odbyt nebo navazující operace je plná, dodatečný CM nemusí vzniknout.
+
+**Cena prostoje není automaticky strojní sazba × prostoje.** Fixní odpisy zpravidla pokračují; variabilní provozní náklady mohou během poruchy odpadnout. Porovnávej varianty: ztracený prodej, přesčasy, přesun výroby, externí kooperace a skutečné náklady na odstranění příčiny. U OEE, scrapu a nadspotřeby pozor na dvojí finanční započtení stejné vady.
+
+### 6.8 COPQ — celkové náklady na nekvalitu
+
+**Pojmy:** COPQ = *Cost of Poor Quality*; COQ = *Cost of Quality*; náklady reklamací = *warranty / customer claims costs*; mimořádné třídění = *containment / sorting costs*; interní a externí selhání = *internal / external failure costs*. COPQ může zahrnovat scrap, rework, třídění a reklamace; širší COQ zahrnuje také prevenci a běžné ověřování kvality. Definice nákladů musí být konzistentní a bez duplicit.
+
+| Modelový měsíční COPQ | Kč |
+| --- | ---: |
+| Scrap | 180 000 |
+| Rework | 70 000 |
+| Mimořádné třídění | 40 000 |
+| Reklamace | 110 000 |
+| **Celkem** | **400 000** |
+
+Při tržbách 20 mil. Kč `COPQ / tržby × 100 = 2 %`. **Pokles zmetkovitosti ze 4 % na 2 % nemusí znamenat pokles COPQ o polovinu** — liší se počet kusů, jejich hodnota a další druhy nekvality.
+
+**Rozhodnutí scrap vs. rework:** 500 neshodných dílů, šrot má výnos 20 Kč/ks; oprava stojí dodatečně 70 Kč/ks a po opravě lze díl prodat za 300 Kč. Scrap přinese 10 000 Kč, rework po dodatečných nákladech 115 000 Kč → **rework je o 105 000 Kč výhodnější**. Původní již vzniklé výrobní náklady se mezi variantami nemění; ověř technickou přípustnost opravy, zaručenou prodejnost a případné kapacitní omezení.
+
 ## 7. Zásoby a rozpracovaná výroba
 
 ### 7.1 Druhy zásob
@@ -1030,6 +1156,23 @@ Ukazatele mohou vyjít podobně, ale odpovídají na jinou otázku.
 
 **Dlouhá doba bez výdeje sama o sobě neznamená nulovou hodnotu.** Současně nedávný malý výdej neznamená, že je celá zbývající zásoba přiměřená. Controller vyčísluje dopad a upozorňuje na riziko. Plánování, výroba, kvalita, nákup a sklad poskytují podklady; účetní oddělení řeší případné účetní snížení hodnoty.
 
+### 7.8 Pracovní kapitál a dopad změny zásob na cash flow
+
+**Pojmy:** čistý provozní pracovní kapitál = *operating working capital (OWC)*; pohledávky = *trade receivables (AR)*; dodavatelské závazky = *trade payables (AP)*; uvolnění kapitálu = *working capital release*. Pro naše rozhodování používáme:
+
+`OWC = zásoby + obchodní pohledávky − dodavatelské závazky`.
+
+| Položka | Dnes | Po snížení zásob |
+| --- | ---: | ---: |
+| Zásoby | 12 mil. Kč | 9 mil. Kč |
+| Pohledávky | 8 mil. Kč | 8 mil. Kč |
+| Závazky dodavatelům | 6 mil. Kč | 6 mil. Kč |
+| **OWC** | **14 mil. Kč** | **11 mil. Kč** |
+
+O 3 mil. Kč se sníží **potřeba financování pracovního kapitálu**. Při správně zvolené realizaci se cash flow může zlepšit, ale nejde automaticky o okamžitý přírůstek peněz na účtu. Pokud jen prodáme výrobky na fakturu, část zásob se změní na pohledávky. Pokud využijeme materiál na skladě místo nového nákupu a výroba/prodej pokračují beze změny, zisk se sám o sobě nezvýší, ale peněžní výdaje za nové nákupy mohou klesnout.
+
+**Úspora skladu:** když po snížení zásob zrušíme pronájem za 80 000 Kč/měsíc, při nezměněných ostatních vlivech se EBIT může zlepšit o 80 000 Kč/měsíc. **Snížení zásob a úspora nájemného jsou dva různé efekty.** Prověř, zda snižujeme materiál, WIP nebo hotové výrobky, a dopad na dodací spolehlivost, výrobní tok a zásoby bezpečnostní.
+
 ## 8. Rozhodování a ekonomický přínos
 
 ### 8.1 Relevantní a utopené náklady
@@ -1150,6 +1293,32 @@ Předpokládáme, že materiál skutečně spotřebujeme, nehrozí znehodnocení
 Výpočet 2 × 10 000 − 8 000 = 12 000 Kč by nesprávně předpokládal také odstranění mzdových nákladů. **Získaná kapacita** — Omezení čekání přinese také využitelný čas. Jeho finanční přínos doložíme například: omezením přesčasů; omezením externí výroby; příspěvkem z další vyrobené a prodané produkce. Přínos z dodatečně prodané výroby nepočítej zároveň podruhé jako úsporu stejných hodin. Ověř pravděpodobnost a rozsah odvrácených poruch. Odhad přínosu není záruka; po realizaci opatření porovnej očekávání se skutečností.
 
 > Při rozhodování sleduj, co se mezi variantami skutečně změní — ve výnosech, nákladech, rizicích a využití kapacity.
+
+### 8.8 Make or Buy — vlastní výroba, nebo dodavatel?
+
+**Pojmy:** vyrábět, nebo nakoupit = *make-or-buy decision*; ušetřitelné fixní náklady = *avoidable fixed costs*; externí kooperace = *outsourcing / subcontracting*. Porovnávej jen budoucí náklady, které rozhodnutí změní; společná fixní režie zůstávající v obou variantách není úsporou z outsourcingu.
+
+**Příklad:** potřeba 10 000 ks/rok, variabilní vlastní výroba 220 Kč/ks, dodavatel 260 Kč/ks, při outsourcingu ušetříme 500 000 Kč ročně na fixních nákladech. Vlastní výroba: `10 000 × 220 + 500 000 = 2 700 000 Kč` relevantních nákladů; nákup: `10 000 × 260 = 2 600 000 Kč`. Dodavatel je o **100 000 Kč/rok** výhodnější (10 Kč/ks). Rozhodnutí je citlivé na skutečnou dosažitelnost fixní úspory, náklady dopravy, kvalitu a zaručený objem/cenu dodávek.
+
+**Bod rovnosti Make or Buy:** vlastní variabilní náklad 150 Kč/ks, nákup 230 Kč/ks, ušetřitelné fixní náklady při nekonání vlastní výroby 1,2 mil. Kč/rok → `1 200 000 / (230 − 150) = 15 000 ks/rok`. Pod hranicí je při daných předpokladech výhodnější nákup, nad ní vlastní výroba. **Garance 8 000 ks versus obchodní očekávání 20 000 ks:** připrav scénáře a citlivost rozhodnutí; optimistický forecast nepovažuj za smluvní jistotu.
+
+### 8.9 CAPEX, doba návratnosti a NPV
+
+**Pojmy:** kapitálový výdaj = *capital expenditure (CAPEX)*; provozní výdaj/náklad podle kontextu = *operating expenditure (OPEX)*; jednoduchá návratnost = *simple payback period*; čistá současná hodnota = *net present value (NPV)*; diskontní sazba = *discount rate*; současná hodnota = *present value (PV)*.
+
+`Čistý roční peněžní přínos = skutečně realizovatelné peněžní úspory + dodatečné inkasované přínosy − dodatečné peněžní náklady` (zjednodušeně, před daněmi, pokud je tak stanoveno); `Jednoduchá doba návratnosti = počáteční investice / stálý roční čistý peněžní přínos`.
+
+**Příklad CNC:** stroj a instalace 8 mil. Kč; roční úspora práce 1,2 mil., materiálu 0,6 mil., energie 0,2 mil.; dodatečný servis 0,4 mil. → čistý peněžní přínos `1,2 + 0,6 + 0,2 − 0,4 = 1,6 mil. Kč/rok`; jednoduchá návratnost `8 / 1,6 = 5 let`. Úspora práce je **cash úspora** pouze pokud skutečně ubydou platby nebo vznikne jinak doložený využitelný přínos.
+
+**NPV diskontuje budoucí peněžní toky:** `NPV = −I₀ + Σ [CFₜ / (1 + r)^t]`, kde `I₀` je počáteční investice, `CFₜ` peněžní tok na konci roku `t` a `r` požadovaný výnos. Model: investice 5 mil. Kč, čtyři roční přínosy 1,5 mil. Kč na konci let, diskont 10 %, bez zůstatkové hodnoty → PV přínosů přibližně **4,755 mil. Kč**, NPV asi **−245 tis. Kč**. Přestože nominální přínosy činí 6 mil. Kč, projekt nesplní požadovaný výnos 10 %. U reálných projektů posuď také životnost, zůstatkovou hodnotu, daně, pracovní kapitál a rizikové scénáře; nepleť si odpis s peněžním tokem.
+
+### 8.10 Produktová a zákaznická profitabilita
+
+**Pojmy:** ziskovost výrobku = *product profitability*; ziskovost zákazníka = *customer profitability*; specifické náklady zákazníka = *customer-specific costs*; příspěvek po specifických nákladech = *customer contribution after specific costs*.
+
+**Příklad zákazníka:** tržby 6 mil. Kč, variabilní výrobní náklady prodaných dílů 4,2 mil. Kč → základní CM **1,8 mil. Kč**. Specifická logistika 300 tis., reklamace a třídění 200 tis., zákaznické technické změny 100 tis. Kč → příspěvek po specifických nákladech **1,2 mil. Kč**, tedy **20 % tržeb**. Není to automaticky čistý zisk; ještě je třeba pokrýt společné fixní náklady.
+
+Při hodnocení zákazníka prověř frekvenci změn odvolávek, velikost dávek, mimořádné přepravy, kvalitu a seřizování. Zda je zákazník dlouhodobě výhodný, neposuzuj pouze podle tržeb nebo jednotkové CM marže; ani libovolně alokovaná společná režie sama nerozhoduje o ukončení zakázky.
 
 ## 9. Měsíční uzávěrka, reporting a prognóza
 
@@ -1293,6 +1462,18 @@ Rozklad překročení:
 > Nákup ověří ceny dalších dodávek, technologie prověří příčinu nadspotřeby a údržba posoudí riziko opakování poruchy. U každého opatření doplníme odpovědnou osobu, termín a způsob ověření přínosu. Dopady do prognózy vyčíslíme podle zjištěných skutečností.
 
 U finálního reportu nahraď obecné role konkrétními odpovědnými osobami a doplň termíny. Pokud už jsou dopady do prognózy ověřené, uveď také jejich částky a období. **Ověřený fakt, pracovní hypotézu a budoucí odhad označuj odlišně.** Neuváděj odhadovanou příčinu jako potvrzenou skutečnost.
+
+### 9.6 Výrobní forecast, směnnost a report pro management
+
+**Pojmy:** průběžně aktualizovaný výhled = *rolling forecast*; požadované strojní hodiny = *required machine hours*; směnnost = *shift pattern*; akční plán = *action plan*. Forecast zachycuje novou očekávanou realitu; původní budget zůstává srovnávacím základem.
+
+**Kapacita:** poptávka 24 000 ks/měsíc, 5 min strojního času/ks → potřeba `24 000 × 5 / 60 = 2 000 strojních hodin`. Jedna směna má dostupnost 1 600 h, dvě směny 3 200 h. Zrušení druhé směny bez dalšího řešení vytváří **schodek 400 strojních hodin**, nikoli automaticky 400 člověkohodin. Prověř přesčasy, počet strojů, paralelní provoz, pracovní obsazení, přesun zakázek a skutečné dodatečné náklady.
+
+**Měsíční report:** budget 100 000 prodaných kusů, tržby 50 mil. Kč, EBITDA 6 mil. Kč, OEE 80 %, zmetkovitost 2 %, zásoby 12 mil. Kč; actual 95 000 ks, tržby 47,5 mil. Kč, EBITDA 4,8 mil. Kč, OEE 74 %, zmetkovitost 3,5 %, zásoby 15 mil. Kč, materiálová odchylka +400 tis. Kč. EBITDA je **o 1,2 mil. Kč pod plánem**. Bez dalšího rozkladu nelze říct, kolik způsobil prodej, výkon zařízení nebo kvalita.
+
+**Komentář vedení:** „EBITDA skončila o 1,2 mil. Kč pod plánem. Vedle nižšího prodeje evidujeme horší OEE, vyšší zmetkovitost a materiálovou odchylku 400 tis. Kč. Prověříme cenový a spotřební vliv materiálu, tři složky OEE a příčiny růstu zásob. Po odstranění překryvů vyčíslíme dopad do výsledku a předložíme opatření s vlastníky a termíny.“
+
+**Pravidlo:** číselná korelace není prokázaná příčina. Horší OEE může omezit prodej, ale nižší prodej může také způsobit jiné využití kapacity. Managementu odděluj ověřený fakt, hypotézu, finanční dopad a navržený další krok.
 
 ## 10. Souhrnný měsíční příklad
 
@@ -1736,6 +1917,32 @@ Před přidáním nové částky ověř, zda již není ve skutečnosti nebo v d
 6. Je dopad už zahrnutý v jiném kroku?
 7. Co výsledek znamená a co z něj zatím nelze vyvodit?
 
+### 11.15 Finanční management a rozhodování CNC závodu — doplňkové vzorce
+
+| Účel | Vzorec |
+| --- | --- |
+| Rozvaha | `Aktiva = vlastní kapitál + závazky` |
+| EBITDA (při odpovídající definici) | `EBIT + odpisy a amortizace` |
+| EBIT marže | `EBIT / tržby × 100` |
+| CM marže | `CM / tržby × 100` |
+| ROA – zde provozní varianta | `EBIT / průměrná aktiva × 100` |
+| ROE | `Čistý zisk / průměrný vlastní kapitál × 100` |
+| Běžná likvidita | `Oběžná aktiva / krátkodobé závazky` |
+| Provozní pracovní kapitál (OWC) | `Zásoby + obchodní pohledávky − dodavatelské závazky` |
+| Strojní sazba – model | `Fixní náklady / plánované produktivní hodiny + variabilní Kč/h` |
+| Seřízení na kus | `Čas seřízení × sazba seřízení / počet kusů v dávce` |
+| CM na strojní hodinu | `CM/ks × 60 / minuty úzkého místa na ks` |
+| Mimořádná zakázka | `Dodatečné tržby − dodatečné variabilní a ostatní relevantní náklady` |
+| Bod rovnosti Make or Buy | `Ušetřitelné fixní náklady / (nákupní cena − variabilní vlastní náklad/ks)` |
+| Jednoduchá návratnost | `Investice / stálý čistý roční peněžní přínos` |
+| Současná hodnota za t let | `CFₜ / (1 + r)^t` |
+| NPV | `−I₀ + Σ CFₜ / (1 + r)^t` |
+| COPQ v % tržeb | `COPQ / tržby × 100` |
+| Příspěvek zákazníka po specifických nákladech | `Tržby − variabilní náklady − specifické zákaznické náklady` |
+| Změna EBITDA v bridge | `Součet nezávislých dopadů do zisku při jednotné metodice` |
+
+**Kontrola příkladů:** cash úspora není automaticky účetní úspora; fixní režie na kus není skutečný přírůstkový náklad; EBIT a EBITDA nejsou totéž; příspěvek po specifických nákladech není čistý zisk zákazníka. Vždy uváděj jednotky, období, předpoklady a rozsah nákladů.
+
 ## 12. Časté chyby a pracovní postup
 
 ### 12.1 Co si neplést
@@ -1960,6 +2167,31 @@ Anglické názvy se mohou mezi firmami lišit. Použité významy odpovídají n
 | Faktová tabulka | Fact table | Události nebo stavy s měřenými hodnotami na jasné úrovni detailu. |
 | Dimenze; číselník | Dimension | Popisné údaje a klíče pro filtrování a členění výsledků, například výrobky, střediska nebo datum. |
 
+| Rozvaha; výsledovka; peněžní tok | Balance sheet; P&L / income statement; cash flow | Stav majetku a financování; výnosy a náklady; pohyb peněz. |
+| Aktiva; vlastní kapitál; závazky | Assets; equity; liabilities | Platí aktiva = vlastní kapitál + závazky. |
+| Akruální princip | Accrual accounting | Výnosy a náklady patří do věcně a časově souvisejícího období. |
+| EBITDA; EBIT; EBT | Earnings before interest, taxes, depreciation and amortisation; earnings before interest and taxes; earnings before taxes | Úrovně výsledku před vybranými položkami. |
+| Čistý zisk; EBIT marže; příspěvková marže | Net profit; EBIT margin; contribution margin ratio | Zisk po dani; EBIT/tržby; CM/tržby. |
+| Rentabilita aktiv; rentabilita vlastního kapitálu | Return on assets (ROA); return on equity (ROE) | V zdejší metodice EBIT/průměrná aktiva a čistý zisk/průměrný vlastní kapitál. |
+| Likvidita; běžná likvidita; zadluženost | Liquidity; current ratio; leverage / indebtedness | Schopnost hradit závazky; oběžná aktiva/krátkodobé závazky; využití dluhu. |
+| Provozní páka | Operating leverage | Citlivost zisku na objem při přítomnosti fixních nákladů. |
+| Strojní hodinová sazba; produktivní strojní hodina | Machine-hour rate; productive machine hour | Náklady přiřazené na hodinu využité výrobní kapacity. |
+| Seřízení; velikost výrobní dávky | Setup / changeover; batch size / lot size | Příprava na výrobu a počet kusů rozdělujících náklady seřízení. |
+| Absorpce režie; nepokrytá fixní režie | Overhead absorption; under-absorbed fixed overhead | Rozvržení režie výkonům; nepokrytí plánovanou rozvrhovou základnou. |
+| Můstek EBITDA; finanční dopad | EBITDA bridge / waterfall; profit impact | Rozklad rozdílu výsledku na ověřené nezávislé vlivy. |
+| Ovlivnitelnost nákladů | Controllability | Možnost odpovědného manažera daný náklad nebo výsledek ovlivnit. |
+| Náklady na nekvalitu; náklady kvality | Cost of Poor Quality (COPQ); Cost of Quality (COQ) | COPQ zahrnuje ztráty z nekvality, COQ i prevenci a kontrolu. |
+| Reklamace; mimořádné třídění | Customer claims / warranty; containment / sorting | Externí dopady vad a mimořádná kontrola dílů. |
+| Vyrábět, nebo nakoupit; outsourcing | Make or buy; outsourcing | Rozhodnutí mezi vlastní výrobou a externí dodávkou. |
+| Ušetřitelné fixní náklady | Avoidable fixed costs | Fixní náklady, které skutečně zaniknou při změně varianty. |
+| Kapitálový výdaj; provozní výdaj | Capital expenditure (CAPEX); operating expenditure (OPEX) | Investiční výdaj versus provozní výdaj / náklad dle kontextu. |
+| Jednoduchá doba návratnosti; NPV | Simple payback period; net present value | Rychlost návratu peněz; hodnota budoucích toků po diskontování. |
+| Současná hodnota; diskontní sazba | Present value (PV); discount rate | Hodnota budoucího toku dnes a míra jeho diskontování. |
+| Zákaznická profitabilita; zákaznické specifické náklady | Customer profitability; customer-specific costs | Ekonomika zákazníka včetně nákladů vyvolaných jeho obsluhou. |
+| Provozní pracovní kapitál; uvolnění pracovního kapitálu | Operating working capital (OWC); working capital release | Zásoby + pohledávky − dodavatelské závazky; snížení potřeby financování. |
+| Pohledávky; dodavatelské závazky | Accounts receivable (AR); accounts payable (AP) | Odběratelé dluží nám; my dlužíme dodavatelům. |
+| Rolling forecast; směnnost | Rolling forecast; shift pattern | Průběžně aktualizovaný výhled; organizace směn. |
+
 ### 13.1 Anglické zkratky v reportu
 
 | Zkratka | Rozvinutí | Český význam |
@@ -1983,6 +2215,18 @@ Anglické názvy se mohou mezi firmami lišit. Použité významy odpovídají n
 | BEP | Break-even point | Bod zvratu |
 | MTS / MTO | Make-to-stock / make-to-order | Výroba na sklad / na objednávku |
 | pp | Percentage points | Procentní body |
+
+| P&L | Profit and loss | Výsledovka |
+| EBITDA | Earnings before interest, taxes, depreciation and amortisation | Provozní výsledek před odpisy, úroky a daněmi (dle definice firmy) |
+| EBIT | Earnings before interest and taxes | Provozní zisk před úroky a daněmi |
+| EBT | Earnings before taxes | Zisk před zdaněním |
+| CM | Contribution margin | Příspěvek na úhradu |
+| ROA / ROE | Return on assets / return on equity | Rentabilita aktiv / vlastního kapitálu |
+| CAPEX / OPEX | Capital / operating expenditure | Investiční / provozní výdaj |
+| NPV / PV | Net present value / present value | Čistá současná / současná hodnota |
+| COPQ / COQ | Cost of Poor Quality / Cost of Quality | Náklady na nekvalitu / náklady kvality |
+| OWC | Operating working capital | Provozní pracovní kapitál |
+| AR / AP | Accounts receivable / accounts payable | Obchodní pohledávky / závazky |
 
 ### 13.2 Tři užitečné věty při čtení reportu
 
