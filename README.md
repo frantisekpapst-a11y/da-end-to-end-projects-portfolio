@@ -1,8 +1,10 @@
 # 📊 Data Analytics End-to-End Projects Portfolio
 
-Portfolio praktických analytických projektů zaměřených na **řešení business problémů od zdrojových dat až po finální interpretaci a reporting**.
+Portfolio praktických analytických projektů zaměřených na **řešení business problémů od zdrojových dat až po interpretaci, reporting a doporučení pro rozhodování**.
 
-Repozitář postupně pokrývá práci s Excelem, Power Query, SQL Serverem, Power BI, DAX, Pythonem, API a automatizací. Jednotlivé projekty používají různé business scénáře a technologie tak, aby se jejich zaměření zbytečně neopakovalo. Portfolio zahrnuje logistiku, zákaznickou retenci, investiční fondy a **výrobní controlling – náklady, provozní výkonnost a ekonomické rozhodování**.
+Výraznou oblastí portfolia je **výrobní a související finanční controlling**: plnění výroby, náklady a jejich odchylky, provozní efektivita, kvalita, zásoby, produktová ziskovost a nákladové prognózy. Důraz je na propojení provozních výsledků s ekonomickým dopadem a na podklady pro výrobní a finanční vedení.
+
+Repozitář zahrnuje také logistickou výkonnost, zákaznickou retenci a analýzu investičních fondů. Projekty využívají Excel, Power Query, Power Pivot, SQL Server, Power BI, DAX, Python, API a automatizaci podle potřeb konkrétní úlohy.
 
 Hlavní důraz je kladen na:
 
@@ -11,9 +13,11 @@ Hlavní důraz je kladen na:
 - přiměřený návrh transformačního procesu;
 - analytickou interpretaci;
 - KPI a datové modelování;
-- reporting a dashboardy;
-- propojení provozních ukazatelů s ekonomickým dopadem;
-- dokumentaci rozhodnutí, omezení a doporučení.
+- reporting a interaktivní dashboardy;
+- porovnání plánu, přepočteného plánu a skutečnosti;
+- propojení nákladů, provozního výkonu, zásob a ziskovosti;
+- formulaci prognóz, priorit a doporučení;
+- dokumentaci rozhodnutí a omezení.
 
 ---
 
@@ -51,15 +55,26 @@ da-end-to-end-projects-portfolio/
 │   │   ├── requirements.txt
 │   │   └── run_pipeline.bat
 │   │
-│   └── project-04-sql-excel-power-bi/
+│   ├── project-04-sql-excel-power-bi/
+│   │   ├── data/
+│   │   ├── excel/
+│   │   ├── output/
+│   │   ├── power-bi/
+│   │   ├── production-controlling-cheatsheet/
+│   │   ├── sql/
+│   │   ├── .gitignore
+│   │   └── README.md
+│   │
+│   └── project-05-excel-power-pivot-dax/
 │       ├── data/
+│       │   ├── clean/
+│       │   └── raw/
 │       ├── excel/
+│       │   └── cnc_plant_performance.xlsx
 │       ├── output/
-│       ├── power-bi/
-│       ├── production-controlling-cheatsheet/
-│       ├── sql/
-│       ├── .gitignore
-│       └── README.md
+│       │   ├── screenshots/
+│       │   └── findings_recommendations.md
+│       └── readme.md
 │
 ├── workflow/
 │   └── analytical-workflow.md
@@ -260,6 +275,51 @@ Závěry a doporučení: [Závěry a doporučení](projects/project-04-sql-excel
 
 ---
 
+## ✅ Project 05 — CNC Plant Performance, Cost Variances & Forecasting
+
+**Excel + Power Query + Power Pivot + DAX**
+
+Dokončený end-to-end projekt zaměřený na **výrobní výkonnost, nákladové odchylky a celoroční prognózu** smyšleného CNC závodu.
+
+Projekt zahrnuje **18 výrobků, 4 střediska a 8 CNC strojů**. Skutečnost pokrývá leden–září 2026, plán celý rok; detailní hodnocení se soustředí na září. Výstupy jsou určené výrobnímu a finančnímu řediteli.
+
+Hlavní oblasti:
+
+- osm CSV zdrojů a příprava dat ve vrstvách `RAW → CLEAN → ANALYTICAL`;
+- relační model v Power Pivotu, výpočtové sloupce a DAX míry;
+- plnění výroby v kusech a normohodinách;
+- rozklad objemu, mixu, změny WIP, spotřeby, cen, pracnosti a režie;
+- OEE, využití kapacity a náklady nekvality (COPQ);
+- zásoby materiálu, rozpracovanosti a hotových výrobků;
+- úplné kalkulace a produktová ziskovost;
+- celoroční nákladová prognóza a odchylky proti plánu;
+- dva interaktivní Excel dashboardy s propojenými průřezy;
+- interpretace výsledků, priority a doporučení pro vedení.
+
+Hlavní technologie:
+
+```text
+Excel
+Power Query
+Power Pivot / Excel Data Model
+DAX
+Git / GitHub
+```
+
+![Dashboard – Výroba a náklady](projects/project-05-excel-power-pivot-dax/output/screenshots/01_dashboard_production_costs.png)
+
+![Dashboard – Ekonomika a výhled](projects/project-05-excel-power-pivot-dax/output/screenshots/02_dashboard_financial_performance_outlook.png)
+
+![Excel – Rozklad materiálových nákladových odchylek](projects/project-05-excel-power-pivot-dax/output/screenshots/03_material_cost_variance_breakdown.png)
+
+![Excel – OEE podle strojů a středisek](projects/project-05-excel-power-pivot-dax/output/screenshots/04_oee_by_machine.png)
+
+Zjištění a doporučení: [Podrobné závěry](projects/project-05-excel-power-pivot-dax/output/findings_recommendations.md).
+
+➡️ [Otevřít Project 05](projects/project-05-excel-power-pivot-dax/)
+
+---
+
 # 🧭 Analytický workflow
 
 Součástí repozitáře je také obecný analytický workflow používaný jako rámec pro plánování a realizaci jednotlivých projektů.
@@ -282,7 +342,7 @@ Business problém
 → dokumentace
 ```
 
-Workflow slouží jako praktická kontrolní struktura, ne jako požadavek použít ve všech projektech stejné technologie nebo všechny možné kroky. Ve výrobním controllingu jej doplňuje porovnání nákladů s normami pro skutečnou výrobu, provozními ukazateli a ekonomickými předpoklady rozhodnutí.
+Workflow slouží jako praktická kontrolní struktura, ne jako požadavek použít ve všech projektech stejné technologie nebo všechny možné kroky. Ve výrobním controllingu jej doplňuje porovnání plánu a skutečnosti, rozklad nákladových odchylek, provozní ukazatele, zásobové návaznosti, ziskovost a prognózy. Rozhodovací propočty jsou součástí projektu 04.
 
 ➡️ [Otevřít analytický workflow](workflow/analytical-workflow.md)
 
@@ -313,6 +373,12 @@ Project 04
 → výrobní controlling
 → nákladové odchylky, provozní KPI a ekonomické rozhodování
 → SQL příprava dat, Power Query transformace, Excel kalkulace a Power BI reporting
+
+Project 05
+→ Excel + Power Query + Power Pivot + DAX
+→ výkonnost CNC závodu, nákladové odchylky a prognóza
+→ objem a mix, OEE, COPQ, zásoby a produktová ziskovost
+→ Power Query příprava dat, Power Pivot model a výpočty, dva Excel dashboardy
 ```
 
 Cílem není použít všechny technologie v každém projektu, ale dát každému nástroji jasnou roli podle konkrétního business a datového problému.
@@ -325,6 +391,7 @@ Cílem není použít všechny technologie v každém projektu, ale dát každé
 Excel
 Power Query
 Excel Data Model
+Power Pivot
 SQL / T-SQL
 SQL Server LocalDB
 Power BI
@@ -342,8 +409,14 @@ KPI
 dashboarding
 automation
 manufacturing controlling
+production performance analysis
 cost variance analysis
+OEE
+cost of poor quality (COPQ)
+inventory analysis
 product costing
+product profitability
+cost forecasting
 decision analysis
 Git
 GitHub
