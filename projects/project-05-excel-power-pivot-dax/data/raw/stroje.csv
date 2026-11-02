@@ -1,0 +1,9 @@
+﻿Stroj_ID;Stroj;Stredisko_ID;Stredisko
+CNC01;Soustruh 01;S01;Soustružení oceli
+CNC02;Soustruh 02;S01;Soustružení oceli
+CNC03;Soustruh 03;S02;Přesné soustružení
+CNC04;Soustruh 04;S02;Přesné soustružení
+CNC05;Frézka 05;S03;Frézování hliníku
+CNC06;Frézka 06;S03;Frézování hliníku
+CNC07;Frézka 07;S04;Frézování oceli
+CNC08;Frézka 08;S04;Frézování oceli
