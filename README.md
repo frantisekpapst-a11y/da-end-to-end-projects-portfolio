@@ -25,58 +25,12 @@ Hlavní důraz je kladen na:
 da-end-to-end-projects-portfolio/
 ├── projects/
 │   ├── project-01-csv-excel-power-query/
-│   │   ├── data/
-│   │   ├── output/
-│   │   ├── dataset_manifest.csv
-│   │   └── README.md
-│   │
 │   ├── project-02-sql-power-bi-dax/
-│   │   ├── data/
-│   │   ├── docs/
-│   │   ├── output/
-│   │   ├── power-bi/
-│   │   ├── sql/
-│   │   ├── .gitignore
-│   │   └── README.md
-│   │
 │   ├── project-03-api-python-sql-power-bi/
-│   │   ├── data/
-│   │   ├── docs/
-│   │   ├── logs/
-│   │   ├── notebooks/
-│   │   ├── output/
-│   │   ├── power-bi/
-│   │   ├── python/
-│   │   ├── sql/
-│   │   ├── .gitignore
-│   │   ├── README.md
-│   │   ├── requirements.txt
-│   │   └── run_pipeline.bat
-│   │
 │   ├── project-04-sql-excel-power-bi/
-│   │   ├── data/
-│   │   ├── excel/
-│   │   ├── output/
-│   │   ├── power-bi/
-│   │   ├── production-controlling-cheatsheet/
-│   │   ├── sql/
-│   │   ├── .gitignore
-│   │   └── README.md
-│   │
 │   └── project-05-excel-power-pivot-dax/
-│       ├── data/
-│       │   ├── clean/
-│       │   └── raw/
-│       ├── excel/
-│       │   └── cnc_plant_performance.xlsx
-│       ├── output/
-│       │   ├── screenshots/
-│       │   └── findings_recommendations.md
-│       └── readme.md
-│
 ├── workflow/
 │   └── analytical-workflow.md
-│
 └── README.md
 ```
 
