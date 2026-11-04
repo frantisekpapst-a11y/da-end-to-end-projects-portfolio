@@ -2,9 +2,7 @@
 
 Portfolio praktických analytických projektů zaměřených na **řešení business problémů od zdrojových dat až po interpretaci, reporting a doporučení pro rozhodování**.
 
-Výraznou oblastí portfolia je **výrobní a související finanční controlling**: plnění výroby, náklady a jejich odchylky, provozní efektivita, kvalita, zásoby, produktová ziskovost a nákladové prognózy. Důraz je na propojení provozních výsledků s ekonomickým dopadem a na podklady pro výrobní a finanční vedení.
-
-Repozitář zahrnuje také logistickou výkonnost, zákaznickou retenci a analýzu investičních fondů. Projekty využívají Excel, Power Query, Power Pivot, SQL Server, Power BI, DAX, Python, API a automatizaci podle potřeb konkrétní úlohy.
+Repozitář zahrnuje logistickou výkonnost, zákaznickou retenci, analýzu investičních fondů a výrobní a související controlling s důrazem na propojení výsledků s ekonomickým dopadem a na podklady pro management.Projekty využívají Excel, Power Query, M, Power Pivot, SQL Server, Power BI, DAX, Python, API a automatizaci podle potřeb konkrétní úlohy.
 
 Hlavní důraz je kladen na:
 
