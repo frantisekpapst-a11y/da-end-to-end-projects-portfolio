@@ -28,6 +28,7 @@ da-end-to-end-projects-portfolio/
 │   ├── project-02-sql-power-bi-dax/
 │   ├── project-03-api-python-sql-power-bi/
 │   ├── project-04-sql-excel-power-bi/
+│   │   └── production-controlling-cheatsheet/
 │   └── project-05-excel-power-pivot-dax/
 ├── workflow/
 │   └── analytical-workflow.md
